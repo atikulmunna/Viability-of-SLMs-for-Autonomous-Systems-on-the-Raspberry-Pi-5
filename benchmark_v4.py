@@ -8,7 +8,6 @@ import subprocess
 import re
 from datetime import timedelta, datetime
 
-# --- Configuration (edit models/prompts if needed) ---
 MODELS_TO_TEST = [
     "qwen3:8b",
     "smollm2:1.7b",
@@ -77,7 +76,6 @@ SYSTEM_PROMPT_TEMPLATE = (
 CSV_FILE = "benchmark_results.csv"
 LIVE_LOG_FILE = "benchmark_live.log"
 
-# --- Helper Functions ---
 
 def timestamp_now():
     return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -109,29 +107,23 @@ def safe_json_parse(text):
     if not text or not isinstance(text, str):
         return None
 
-    # First, look for {...} substring
     match = re.search(r'\{.*\}', text, re.DOTALL)
     if not match:
         return None
     json_str = match.group(0)
 
-    # Mild sanitization
     json_str = json_str.replace("\n", " ")
     json_str = json_str.replace("\r", " ")
     json_str = json_str.strip()
 
-    # Replace single quotes with double quotes (naive but often helps)
-    # But avoid converting inside already correct double-quoted JSON
     json_str = re.sub(r"(?<!\")'(?P<m>[^']*?)'(?!\")", r'"\g<m>"', json_str)
 
-    # Remove trailing commas before closing braces/brackets: ,}
     json_str = re.sub(r",\s*}", "}", json_str)
     json_str = re.sub(r",\s*]", "]", json_str)
 
     try:
         return json.loads(json_str)
     except json.JSONDecodeError:
-        # final attempt: repair simple common errors by escaping control chars
         try:
             repaired = json_str.encode('utf-8', 'replace').decode('unicode_escape')
             return json.loads(repaired)
@@ -170,7 +162,6 @@ def write_detailed_log(logfile_handle, model, prompt_name, command, raw_response
 
 def run_benchmark():
     file_exists = os.path.isfile(CSV_FILE)
-    # Open live log for append (detailed)
     live_log = open(LIVE_LOG_FILE, "a", encoding="utf-8")
 
     with open(CSV_FILE, 'a', newline='', encoding="utf-8") as csvfile:
@@ -184,7 +175,6 @@ def run_benchmark():
             writer.writeheader()
             csvfile.flush()
 
-        # Load completed tests so we can resume
         completed = set()
         if file_exists:
             with open(CSV_FILE, 'r', encoding="utf-8") as f:
@@ -203,18 +193,15 @@ def run_benchmark():
                     prompt_name = prompt_info["name"]
 
                     if (model, prompt_name) in completed:
-                        # Already done
-                        done_tests += 0  # keep done_tests same; completed is counted earlier
+                        done_tests += 0  
                         continue
 
                     command = prompt_info["command"]
                     full_prompt = SYSTEM_PROMPT_TEMPLATE.format(command=command)
 
-                    # Measure system usage and temp before the request
                     cpu, ram = get_system_usage()
                     temp_c = get_temp_c()
 
-                    # Build API request payload
                     data = {
                         "model": model,
                         "prompt": full_prompt,
@@ -234,14 +221,13 @@ def run_benchmark():
                         )
                         response.raise_for_status()
                         api_response = response.json()
-                        # The response might contain keys like 'response' or maybe 'outputs' depending on the API.
-                        # We try common shapes; default to empty string.
+
                         if isinstance(api_response, dict):
                             raw_response_text = api_response.get('response') or api_response.get('output') or api_response.get('text') or ""
                             # Some servers wrap content deeper; handle lists
                             if not raw_response_text and 'choices' in api_response:
                                 try:
-                                    # Ollama-like responses might have choices[0].content
+
                                     choices = api_response.get('choices')
                                     if isinstance(choices, list) and len(choices) > 0:
                                         choice = choices[0]
@@ -258,23 +244,19 @@ def run_benchmark():
                     end_time = time.time()
                     latency = end_time - start_time
 
-                    # Aggregate metrics (some defaults if missing)
                     eval_count = api_response.get('eval_count', 0) if isinstance(api_response, dict) else 0
                     eval_duration_ns = api_response.get('eval_duration', 1) if isinstance(api_response, dict) else 1
                     eval_duration_s = eval_duration_ns / 1_000_000_000 if eval_duration_ns else 0
                     tokens_per_sec = (eval_count / eval_duration_s) if eval_duration_s > 0 else 0.0
 
-                    # Parse/validate JSON response with fallback repairs
                     parsed = safe_json_parse(raw_response_text)
                     accuracy = "Pass" if parsed else "Fail (Invalid JSON)"
 
-                    # Write a detailed live log entry
                     write_detailed_log(
                         live_log, model, prompt_name, full_prompt, raw_response_text,
                         latency, tokens_per_sec, cpu, ram, temp_c, accuracy, error_msg
                     )
 
-                    # Record CSV row
                     writer.writerow({
                         'timestamp': timestamp_now(),
                         'model': model,
@@ -290,7 +272,6 @@ def run_benchmark():
                     })
                     csvfile.flush()
 
-                    # Update progress & ETA
                     done_tests += 1
                     elapsed = time.time() - start_time_all
                     avg_time = elapsed / done_tests if done_tests > 0 else 0
@@ -298,7 +279,6 @@ def run_benchmark():
                     eta = timedelta(seconds=int(avg_time * remaining))
                     progress_pct = (done_tests / total_tests) * 100
 
-                    # Terminal summary (compact)
                     print(f"[{progress_pct:.1f}%] {model} | {prompt_name} | Latency: {latency:.2f}s | "
                           f"Temp: {temp_c}°C | Tokens/s: {tokens_per_sec:.2f} | Acc: {accuracy} | ETA: {eta}")
 
@@ -308,7 +288,6 @@ def run_benchmark():
     print(f"\n✅ Benchmark complete! Results appended to: {CSV_FILE}")
     print(f"✅ Live detailed log: {LIVE_LOG_FILE}")
 
-# --- Entry Point ---
 if __name__ == "__main__":
     run_benchmark()
 
