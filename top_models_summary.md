@@ -1,4 +1,4 @@
-# 🏆 Top 3 Model Summary
+# Top 3 Model Summary
 
 | Rank | Model | Performance Score | Accuracy (%) | Latency (s) | Tokens/s | CPU (%) | RAM (%) | Temp (°C) |
 |------|--------|------------------|---------------|--------------|-----------|----------|----------|-----------|
