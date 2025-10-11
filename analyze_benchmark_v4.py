@@ -4,17 +4,14 @@ import seaborn as sns
 import numpy as np
 import os
 
-# === CONFIG ===
 CSV_FILE = "benchmark_summary.csv"
 sns.set(style="whitegrid", context="notebook")
 
-# === LOAD DATA ===
 if not os.path.exists(CSV_FILE):
     raise FileNotFoundError(f"CSV file '{CSV_FILE}' not found!")
 
 df = pd.read_csv(CSV_FILE)
 
-# === AUTO-DETECT KEY COLUMNS ===
 def find_col(df, options):
     for col in options:
         if col in df.columns:
@@ -29,7 +26,6 @@ temp_col = find_col(df, ["Avg_Temp_C"])
 acc_col = find_col(df, ["Accuracy_%"])
 perf_col = find_col(df, ["Performance_Score"])
 
-# === CLEAN NUMERIC COLUMNS ===
 for col in df.columns:
     df[col] = pd.to_numeric(df[col], errors="ignore")
 
@@ -76,7 +72,7 @@ plt.show()
 metrics = [c for c in [lat_col, tok_col, cpu_col, ram_col, temp_col, acc_col, perf_col] if c]
 
 if len(metrics) >= 3:
-    print("\n📈 Generating radar chart...")
+    print("\n Generating radar chart...")
     df_norm = df.copy()
     for col in metrics:
         if "Latency" in col:
@@ -111,9 +107,9 @@ if len(metrics) >= 3:
 top_col = perf_col or acc_col or lat_col
 top_df = df.head(3)[["Model", top_col, lat_col, tok_col, cpu_col, ram_col, temp_col, acc_col, perf_col]].fillna("N/A")
 
-print("\n🏆 Top 3 Models Summary:\n")
+print("\n Top 3 Models Summary:\n")
 for idx, row in top_df.iterrows():
-    print(f"🔥 {row['Model']}")
+    print(f" {row['Model']}")
     print(f"   Performance Score: {row.get(perf_col, 'N/A')}")
     print(f"   Accuracy: {row.get(acc_col, 'N/A')}")
     print(f"   Latency: {row.get(lat_col, 'N/A')} s")
@@ -121,7 +117,7 @@ for idx, row in top_df.iterrows():
     print(f"   CPU: {row.get(cpu_col, 'N/A')} %, RAM: {row.get(ram_col, 'N/A')} %, Temp: {row.get(temp_col, 'N/A')} °C\n")
 
 # === SAVE TO MARKDOWN ===
-md = ["# 🏆 Top 3 Model Summary\n"]
+md = ["#  Top 3 Model Summary\n"]
 md.append("| Rank | Model | Performance Score | Accuracy (%) | Latency (s) | Tokens/s | CPU (%) | RAM (%) | Temp (°C) |")
 md.append("|------|--------|------------------|---------------|--------------|-----------|----------|----------|-----------|")
 
@@ -133,5 +129,3 @@ for i, (_, row) in enumerate(top_df.iterrows(), 1):
 with open("top_models_summary.md", "w", encoding="utf-8") as f:
     f.write("\n".join(md))
 
-print("✅ Top models summary saved as top_models_summary.md")
-print("\n🎯 Analysis complete — visuals and summary ready!")
