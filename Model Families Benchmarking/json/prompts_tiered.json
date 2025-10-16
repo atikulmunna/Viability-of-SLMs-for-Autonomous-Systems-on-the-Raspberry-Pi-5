@@ -1,0 +1,26 @@
+{
+  "reasoning": [
+    "A train leaves City A at 9 AM at 60 km/h and another from City B at 10 AM at 90 km/h. They are 300 km apart. When will they meet?",
+    "If all bloops are razzies and some razzies are lazzies, can we conclude that some bloops are lazzies? Explain logically.",
+    "You are given a 3x3 grid with numbers 1 to 9. Find the path from top-left to bottom-right that maximizes the sum of visited numbers.",
+    "In a group of 50 students, 30 play football, 25 play cricket, and 10 play both. How many play neither?"
+  ],
+  "coding": [
+    "Write a Python function to check if a string is a palindrome without using reversed().",
+    "Implement a function in Python that returns the Fibonacci sequence up to n terms using recursion.",
+    "Write a Python script that counts how many times each word appears in a given text file.",
+    "Create a function that sorts a list of dictionaries by a key named 'score'."
+  ],
+  "factual": [
+    "What are the three laws of thermodynamics?",
+    "Who wrote the novel '1984' and what are its central themes?",
+    "Explain how the human respiratory system works in simple terms.",
+    "What is the difference between supervised and unsupervised learning in machine learning?"
+  ],
+  "general": [
+    "Write a motivational paragraph for students preparing for exams.",
+    "Summarize the impact of social media on modern communication.",
+    "Draft a short email to a professor requesting an extension for a project deadline.",
+    "Describe a peaceful morning scene in a small village."
+  ]
+}
