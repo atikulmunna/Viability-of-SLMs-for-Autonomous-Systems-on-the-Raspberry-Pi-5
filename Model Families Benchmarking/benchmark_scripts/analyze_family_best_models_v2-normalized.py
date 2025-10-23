@@ -4,7 +4,7 @@ import seaborn as sns
 from math import pi
 import os
 
-# ========= CONFIG ==========
+#  CONFIG 
 RESULT_FILES = [
     "benchmark_results_qwen.csv",
     "benchmark_results_gemma.csv",
@@ -15,7 +15,7 @@ RESULT_FILES = [
 OUTPUT_COMBINED = "benchmark_results_all_families.csv"
 FIGURES_DIR = "figures"
 os.makedirs(FIGURES_DIR, exist_ok=True)
-# ===========================
+ 
 
 # Load and combine all results
 dfs = []
@@ -68,7 +68,7 @@ summary.to_csv("family_summary_scores.csv", index=False)
 print("\nFamily-level Summary:")
 print(summary)
 
-# ========= VISUALS ==========
+#  Visuals 
 
 sns.set_theme(style="whitegrid")
 

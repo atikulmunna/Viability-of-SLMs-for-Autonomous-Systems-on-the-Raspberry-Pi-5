@@ -3,16 +3,11 @@ import psutil
 import random
 
 def simulate_temperature():
-    """Simulate temperature readings."""
     base_temp = 55 + random.uniform(-2, 2)
     fluctuation = random.uniform(0, 8)
     return base_temp + fluctuation
 
 def run_model_test(model_name, prompt, tier_name):
-    """
-    Simulates a benchmark run for a given model and prompt.
-    Replace the simulation logic with your actual model inference code later.
-    """
 
     # Start metrics
     start_time = time.time()

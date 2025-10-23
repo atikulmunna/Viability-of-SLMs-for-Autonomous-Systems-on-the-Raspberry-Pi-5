@@ -5,23 +5,17 @@ import os
 import numpy as np
 from math import pi
 
-# ==============================
 # CONFIGURATION
-# ==============================
 CSV_FILE = "benchmark_results_all_families.csv"
 OUTPUT_DIR = "figures/showdown"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# ==============================
 # LOAD AND CLEAN DATA
-# ==============================
 df = pd.read_csv(CSV_FILE)
 required = ["Family", "Model", "Avg_Tokens_per_s", "Avg_Latency_s", "Avg_RAM_%", "Accuracy_%"]
 df = df.dropna(subset=required)
 
-# ==============================
 # NORMALIZATION
-# ==============================
 def normalize(series):
     return (series - series.min()) / (series.max() - series.min())
 
@@ -37,9 +31,7 @@ df["CompositeNormScore"] = (
     0.1 * (1 - df["RAMNorm"])
 )
 
-# ==============================
 # PER-FAMILY TOP 5
-# ==============================
 families = df["Family"].unique()
 summary_rows = []
 
@@ -81,9 +73,7 @@ for fam in families:
     # Save top model for mega showdown
     summary_rows.append(top5.iloc[0])
 
-# ==============================
-# MEGA SHOWDOWN (Top Model of Each Family)
-# ==============================
+#Top Model of Each Family
 top_families_df = pd.DataFrame(summary_rows)
 
 categories = ["TokensNorm", "AccNorm", "LatNorm", "RAMNorm"]
@@ -112,9 +102,7 @@ plt.close()
 
 print(f"\nSaved Mega Showdown Radar → {showdown_img}")
 
-# ==============================
 # FINAL SUMMARY
-# ==============================
 leaderboard_path = os.path.join(OUTPUT_DIR, "top5_showdown_leaderboard.csv")
 top_families_df.to_csv(leaderboard_path, index=False)
 print(f" Leaderboard saved → {leaderboard_path}")
@@ -124,9 +112,7 @@ print("\n Absolute Top Model Across Families:")
 print(best[["Family", "Model", "CompositeNormScore", "Avg_Latency_s", "Avg_Tokens_per_s", "Avg_RAM_%", "Accuracy_%"]])
 
 
-# =====================================================
 # PERFORMANCE HEATMAP (Top Models Across Families)
-# =====================================================
 import seaborn as sns
 
 # Prepare data for heatmap

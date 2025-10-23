@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# === CONFIG ===
+# CONFIG
 FAMILY_FILES = [
     "benchmark_results_qwen.csv",
     "benchmark_results_gemma.csv",
@@ -14,7 +14,7 @@ FAMILY_FILES = [
 OUTPUT_CSV = "benchmark_results_all_families.csv"
 os.makedirs("figures", exist_ok=True)
 
-# === LOAD & COMBINE ===
+# LOAD and COMBINE
 dfs = []
 for file in FAMILY_FILES:
     if os.path.exists(file):
@@ -31,7 +31,7 @@ combined_df = pd.concat(dfs, ignore_index=True)
 combined_df.to_csv(OUTPUT_CSV, index=False)
 print(f"Combined results saved to {OUTPUT_CSV}")
 
-# === BASIC STATS ===
+# BASIC STATS
 summary = (
     combined_df.groupby("Family")
     .agg({
@@ -48,7 +48,7 @@ summary = (
 print("\nFamily-level Summary:")
 print(summary)
 
-# === VISUALIZATIONS ===
+# VISUALIZATIONS
 sns.set_theme(style="whitegrid")
 
 # Latency per family
@@ -79,7 +79,7 @@ plt.title("Average Temperature per Family (°C)")
 plt.tight_layout()
 plt.savefig("figures/family_temp.png")
 
-# === PERFORMANCE RADAR ===
+# PERFORMANCE RADAR
 from math import pi
 
 categories = ["Avg_Latency_s", "Avg_Tokens_per_s", "Accuracy_%", "Performance_Score"]
@@ -91,7 +91,7 @@ plt.figure(figsize=(8,8))
 
 for _, row in summary.iterrows():
     values = row[categories].values.flatten().tolist()
-    # Normalize (invert latency for better interpretation)
+    # Normalize (inverting latency for better interpretation)
     normalized_values = []
     for c, v in zip(categories, values):
         if c == "Avg_Latency_s":

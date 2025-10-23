@@ -5,12 +5,12 @@ import os
 import numpy as np
 from math import pi
 
-# ========== CONFIG ==========
+# CONFIG 
 CSV_FILE = "benchmark_results_all_families.csv"
 OUTPUT_DIR = "figures"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# ========== LOAD & CLEAN DATA ==========
+#  LOAD and CLEAN DATA 
 df = pd.read_csv(CSV_FILE)
 
 # Select relevant columns (adjust if needed)
@@ -24,7 +24,7 @@ metrics = [
 # Drop incomplete rows
 df = df.dropna(subset=metrics)
 
-# ========== NORMALIZATION ==========
+#  NORMALIZATION 
 def normalize(series):
     return (series - series.min()) / (series.max() - series.min())
 
@@ -33,8 +33,7 @@ df["AccNorm"] = normalize(df["Accuracy_%"])
 df["LatNorm"] = normalize(df["Avg_Latency_s"])
 df["RAMNorm"] = normalize(df["Avg_RAM_%"])
 
-# ========== WEIGHTED SCORE ==========
-# Higher tokens/sec & accuracy are good, lower latency & RAM are good
+#  WEIGHTED SCORE 
 df["Normalized_Weighted_Score"] = (
     0.4 * df["TokensNorm"] +
     0.3 * df["AccNorm"] +
@@ -42,7 +41,7 @@ df["Normalized_Weighted_Score"] = (
     0.1 * (1 - df["RAMNorm"])
 )
 
-# ========== BAR CHARTS ==========
+#  BAR CHARTS 
 sns.set_theme(style="whitegrid")
 
 fig, axes = plt.subplots(2, 2, figsize=(12, 8))
@@ -72,7 +71,7 @@ plt.close()
 
 print("✅ Saved: family_metric_bars_v2.png")
 
-# ========== RADAR CHART ==========
+#  RADAR CHART 
 categories = ["TokensNorm", "AccNorm", "LatNorm", "RAMNorm"]
 num_vars = len(categories)
 
@@ -99,12 +98,12 @@ plt.close()
 
 print("Saved: family_radar_chart_v2.png")
 
-# ========== SAVE SUMMARY ==========
+#  SAVE SUMMARY 
 summary_path = os.path.join(OUTPUT_DIR, "family_summary_v2.csv")
 df.to_csv(summary_path, index=False)
 print(f"Saved detailed summary to {summary_path}")
 
-# ========== DISPLAY TOP FAMILY ==========
+#  DISPLAY TOP FAMILY 
 top_family = df.loc[df["Normalized_Weighted_Score"].idxmax()]
 print("\nTop Performing Family (Normalized Composite):")
 print(top_family[["Family", "Normalized_Weighted_Score", "Avg_Latency_s", "Avg_Tokens_per_s", "Avg_RAM_%", "Accuracy_%"]])
