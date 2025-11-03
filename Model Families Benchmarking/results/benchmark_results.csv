@@ -1,0 +1,441 @@
+timestamp,model,prompt_name,end_to_end_latency_s,eval_tokens,eval_duration_s,tokens_per_second,cpu_percent,ram_percent,temperature_C,accuracy
+2025-10-11 05:08:06,qwen3:8b,turn_on_light,203.5739,247,123.4725,2.0,0.0,7.7,48.8,Fail (Invalid JSON)
+2025-10-11 05:10:22,qwen3:8b,turn_off_fan,134.9424,247,123.082,2.01,36.2,77.7,63.1,Fail (Invalid JSON)
+2025-10-11 05:12:58,qwen3:8b,set_alarm,154.2506,279,140.8513,1.98,49.9,77.3,64.8,Pass
+2025-10-11 05:17:59,qwen3:8b,open_browser,300.0986,0,0.0,0.0,51.1,77.2,64.2,Fail (Invalid JSON)
+2025-10-11 05:20:46,qwen3:8b,weather_check,166.4572,296,154.1221,1.92,89.7,77.2,66.4,Fail (Invalid JSON)
+2025-10-11 05:25:47,qwen3:8b,play_music,300.0987,0,0.0,0.0,52.0,77.3,65.9,Fail (Invalid JSON)
+2025-10-11 05:30:48,qwen3:8b,system_status,300.101,0,0.0,0.0,87.0,77.3,67.0,Fail (Invalid JSON)
+2025-10-11 05:35:49,qwen3:8b,start_timer,300.0981,0,0.0,0.0,64.8,77.3,65.3,Fail (Invalid JSON)
+2025-10-11 05:40:26,qwen3:8b,send_email,275.7708,497,261.2762,1.9,99.5,77.3,69.7,Fail (Invalid JSON)
+2025-10-11 05:42:30,qwen3:8b,translate_phrase,122.9959,217,109.6146,1.98,52.1,77.5,64.2,Pass
+2025-10-11 05:47:31,qwen3:8b,get_time,300.0982,0,0.0,0.0,50.0,77.5,65.3,Fail (Invalid JSON)
+2025-10-11 05:52:32,qwen3:8b,control_volume,300.102,0,0.0,0.0,97.8,77.6,71.4,Fail (Invalid JSON)
+2025-10-11 05:54:31,qwen3:8b,find_file,117.3249,201,103.9109,1.93,98.5,77.5,70.3,Fail (Invalid JSON)
+2025-10-11 05:59:32,qwen3:8b,check_battery,300.0986,0,0.0,0.0,50.2,77.7,64.8,Fail (Invalid JSON)
+2025-10-11 06:03:29,qwen3:8b,launch_app,236.1982,441,223.6899,1.97,99.7,77.5,71.9,Fail (Invalid JSON)
+2025-10-11 06:06:06,qwen3:8b,bluetooth_on,156.357,289,145.0713,1.99,51.1,77.6,65.3,Fail (Invalid JSON)
+2025-10-11 06:11:07,qwen3:8b,wifi_status,300.1002,0,0.0,0.0,51.3,77.6,65.3,Fail (Invalid JSON)
+2025-10-11 06:13:28,qwen3:8b,record_voice,139.3056,253,126.1601,2.01,73.0,77.5,64.2,Pass
+2025-10-11 06:18:29,qwen3:8b,calendar_event,300.1004,0,0.0,0.0,49.9,77.5,64.8,Fail (Invalid JSON)
+2025-10-11 06:23:30,qwen3:8b,smart_home_temp,300.1042,0,0.0,0.0,98.0,78.5,69.2,Fail (Invalid JSON)
+2025-10-11 06:25:25,qwen3:8b,math_simple,114.3267,196,99.5035,1.97,98.7,78.5,70.3,Pass
+2025-10-11 06:27:48,qwen3:8b,math_reasoning,141.4772,250,125.7348,1.99,50.9,78.7,64.2,Pass
+2025-10-11 06:32:49,qwen3:8b,logical_reasoning,300.098,0,0.0,0.0,51.6,78.6,64.2,Fail (Invalid JSON)
+2025-10-11 06:37:50,qwen3:8b,story_creative,300.0992,0,0.0,0.0,98.7,78.5,70.8,Fail (Invalid JSON)
+2025-10-11 06:42:51,qwen3:8b,summarization,300.0998,0,0.0,0.0,100.0,78.5,69.2,Fail (Invalid JSON)
+2025-10-11 06:47:52,qwen3:8b,coding_task,300.1014,0,0.0,0.0,99.7,78.5,69.2,Fail (Invalid JSON)
+2025-10-11 06:52:53,qwen3:8b,analytical_thinking,300.1012,0,0.0,0.0,61.7,78.6,65.9,Fail (Invalid JSON)
+2025-10-11 06:54:15,qwen3:8b,translation_task,80.8864,136,68.2926,1.99,87.7,78.5,65.9,Pass
+2025-10-11 06:58:01,qwen3:8b,definition_task,224.7143,416,211.589,1.97,49.2,78.8,65.3,Pass
+2025-10-11 07:00:47,qwen3:8b,creative_analogy,165.0452,299,151.6616,1.97,52.3,78.5,65.3,Pass
+2025-10-11 07:05:48,qwen3:8b,compare_models,300.0986,0,0.0,0.0,49.7,78.6,64.2,Fail (Invalid JSON)
+2025-10-11 07:09:06,qwen3:8b,data_interpretation,197.1813,357,181.9639,1.96,89.3,78.6,68.6,Fail (Invalid JSON)
+2025-10-11 07:13:43,qwen3:8b,critical_thinking,275.3967,511,261.4974,1.95,50.9,78.7,65.3,Fail (Invalid JSON)
+2025-10-11 07:18:11,qwen3:8b,cause_effect,267.0876,494,253.4435,1.95,51.1,78.6,63.7,Fail (Invalid JSON)
+2025-10-11 07:22:06,qwen3:8b,math_advanced,233.9203,433,219.4916,1.97,51.2,78.6,64.8,Fail (Invalid JSON)
+2025-10-11 07:24:38,qwen3:8b,language_reasoning,151.1434,272,136.7025,1.99,52.9,78.6,63.7,Fail (Invalid JSON)
+2025-10-11 07:29:39,qwen3:8b,creative_task,300.1011,0,0.0,0.0,50.0,78.7,63.7,Fail (Invalid JSON)
+2025-10-11 07:34:40,qwen3:8b,science_question,300.0981,0,0.0,0.0,74.1,78.6,66.4,Fail (Invalid JSON)
+2025-10-11 07:39:41,qwen3:8b,moral_reasoning,300.101,0,0.0,0.0,97.5,78.6,69.7,Fail (Invalid JSON)
+2025-10-11 07:44:42,qwen3:8b,summary_task,300.1,0,0.0,0.0,99.2,78.6,69.7,Fail (Invalid JSON)
+2025-10-11 07:45:12,smollm2:1.7b,turn_on_light,28.8654,22,3.675,5.99,99.0,78.7,69.7,Pass
+2025-10-11 07:45:20,smollm2:1.7b,turn_off_fan,6.6994,22,4.0738,5.4,0.3,42.0,58.7,Pass
+2025-10-11 07:45:28,smollm2:1.7b,set_alarm,6.9756,23,4.1266,5.57,0.7,40.4,60.4,Pass
+2025-10-11 07:45:36,smollm2:1.7b,open_browser,7.4592,28,4.7639,5.88,0.3,40.1,59.8,Pass
+2025-10-11 07:45:44,smollm2:1.7b,weather_check,6.4694,23,3.8482,5.98,0.3,40.0,60.9,Pass
+2025-10-11 07:45:52,smollm2:1.7b,play_music,6.7271,25,4.201,5.95,0.3,39.8,59.8,Pass
+2025-10-11 07:46:02,smollm2:1.7b,system_status,9.8272,42,7.2111,5.82,0.3,39.8,60.4,Pass
+2025-10-11 07:46:10,smollm2:1.7b,start_timer,6.6123,21,3.9933,5.26,0.2,39.8,60.9,Pass
+2025-10-11 07:46:28,smollm2:1.7b,send_email,17.032,75,13.8716,5.41,0.3,39.8,62.0,Pass
+2025-10-11 07:46:38,smollm2:1.7b,translate_phrase,8.6486,30,5.7486,5.22,0.2,39.8,59.8,Pass
+2025-10-11 07:46:45,smollm2:1.7b,get_time,6.092,18,3.523,5.11,0.3,39.8,59.3,Pass
+2025-10-11 07:46:53,smollm2:1.7b,control_volume,7.4756,26,4.6771,5.56,0.2,40.0,60.9,Pass
+2025-10-11 07:47:01,smollm2:1.7b,find_file,7.0794,24,4.2273,5.68,0.3,39.9,60.4,Pass
+2025-10-11 07:47:09,smollm2:1.7b,check_battery,6.3774,23,3.8501,5.97,0.3,39.8,60.4,Pass
+2025-10-11 07:47:17,smollm2:1.7b,launch_app,7.3623,25,4.8958,5.11,0.3,39.9,59.8,Pass
+2025-10-11 07:47:24,smollm2:1.7b,bluetooth_on,5.7247,20,3.3228,6.02,0.2,40.0,59.3,Pass
+2025-10-11 07:47:32,smollm2:1.7b,wifi_status,7.0052,26,4.3894,5.92,0.2,39.9,59.3,Pass
+2025-10-11 07:47:39,smollm2:1.7b,record_voice,5.9537,19,3.1519,6.03,0.3,39.9,59.8,Pass
+2025-10-11 07:47:58,smollm2:1.7b,calendar_event,17.8824,80,14.8275,5.4,0.3,39.8,59.8,Pass
+2025-10-11 07:48:05,smollm2:1.7b,smart_home_temp,6.114,19,3.1484,6.03,0.3,39.8,61.5,Pass
+2025-10-11 07:48:13,smollm2:1.7b,math_simple,7.3079,23,4.5076,5.1,0.3,39.9,59.3,Pass
+2025-10-11 07:48:25,smollm2:1.7b,math_reasoning,11.0834,37,7.8219,4.73,0.3,39.9,59.3,Pass
+2025-10-11 07:48:35,smollm2:1.7b,logical_reasoning,8.7129,32,5.5035,5.81,0.2,39.8,59.3,Pass
+2025-10-11 07:48:51,smollm2:1.7b,story_creative,14.7605,60,11.8018,5.08,0.2,39.9,60.9,Pass
+2025-10-11 07:49:00,smollm2:1.7b,summarization,8.257,28,4.8306,5.8,0.3,39.8,60.4,Pass
+2025-10-11 07:49:07,smollm2:1.7b,coding_task,6.4429,21,3.5373,5.94,0.5,39.9,60.4,Pass
+2025-10-11 07:49:15,smollm2:1.7b,analytical_thinking,7.1045,24,4.0373,5.94,0.2,39.9,60.9,Pass
+2025-10-11 07:49:23,smollm2:1.7b,translation_task,6.4217,18,3.6654,4.91,0.2,39.8,59.3,Pass
+2025-10-11 07:49:36,smollm2:1.7b,definition_task,12.0389,49,9.2382,5.3,0.3,39.8,59.3,Pass
+2025-10-11 07:49:46,smollm2:1.7b,creative_analogy,9.5052,38,6.6522,5.71,0.5,39.8,59.8,Pass
+2025-10-11 07:50:19,smollm2:1.7b,compare_models,31.5033,136,28.5971,4.76,0.0,39.9,60.4,Fail (Invalid JSON)
+2025-10-11 07:50:27,smollm2:1.7b,data_interpretation,7.2357,24,4.0732,5.89,0.5,39.9,59.3,Pass
+2025-10-11 07:50:37,smollm2:1.7b,critical_thinking,8.6948,34,5.7898,5.87,0.3,40.0,59.3,Pass
+2025-10-11 07:50:48,smollm2:1.7b,cause_effect,10.0823,42,7.233,5.81,0.3,39.9,60.4,Pass
+2025-10-11 07:50:57,smollm2:1.7b,math_advanced,8.3271,31,5.2708,5.88,0.2,39.9,59.3,Pass
+2025-10-11 07:51:05,smollm2:1.7b,language_reasoning,7.0948,24,4.0349,5.95,0.3,39.9,59.8,Pass
+2025-10-11 07:51:14,smollm2:1.7b,creative_task,7.9925,29,4.932,5.88,0.2,39.8,60.4,Pass
+2025-10-11 07:52:01,smollm2:1.7b,science_question,45.3405,237,42.7187,5.55,0.3,39.9,59.3,Fail (Invalid JSON)
+2025-10-11 07:52:19,smollm2:1.7b,moral_reasoning,17.591,76,14.7444,5.15,0.5,40.0,60.9,Pass
+2025-10-11 07:52:28,smollm2:1.7b,summary_task,8.06,29,5.155,5.63,0.3,39.9,60.4,Pass
+2025-10-11 07:53:25,mathstral:latest,turn_on_light,55.5542,0,0.0,0.0,0.5,40.0,59.3,Fail (Invalid JSON)
+2025-10-11 07:54:34,mathstral:latest,turn_off_fan,68.134,24,9.3547,2.57,1.3,7.3,58.2,Pass
+2025-10-11 07:54:59,mathstral:latest,set_alarm,24.0289,28,10.6381,2.63,0.0,61.0,59.8,Pass
+2025-10-11 07:55:22,mathstral:latest,open_browser,21.6489,25,9.0781,2.75,0.3,61.0,60.9,Pass
+2025-10-11 07:55:45,mathstral:latest,weather_check,22.2685,25,9.7089,2.57,0.5,61.1,63.1,Pass
+2025-10-11 07:56:17,mathstral:latest,play_music,31.0389,52,19.2688,2.7,0.3,61.0,62.0,Pass
+2025-10-11 07:57:03,mathstral:latest,system_status,44.87,80,32.5578,2.46,0.3,61.0,63.7,Pass
+2025-10-11 07:57:24,mathstral:latest,start_timer,20.2693,22,7.955,2.77,0.3,61.0,63.7,Pass
+2025-10-11 07:57:58,mathstral:latest,send_email,32.4441,47,17.9216,2.62,0.3,61.0,64.8,Pass
+2025-10-11 07:59:04,mathstral:latest,translate_phrase,65.6565,122,52.1275,2.34,0.5,61.0,64.8,Pass
+2025-10-11 07:59:25,mathstral:latest,get_time,19.7155,20,7.7028,2.6,0.3,61.0,65.3,Pass
+2025-10-11 07:59:53,mathstral:latest,control_volume,26.6709,33,13.3795,2.47,0.0,61.0,64.2,Pass
+2025-10-11 08:00:35,mathstral:latest,find_file,41.4154,71,27.8826,2.55,0.3,60.9,64.8,Pass
+2025-10-11 08:00:59,mathstral:latest,check_battery,22.6812,27,10.9046,2.48,0.3,61.1,65.3,Pass
+2025-10-11 08:01:21,mathstral:latest,launch_app,21.1573,23,9.38,2.45,0.3,61.0,63.7,Pass
+2025-10-11 08:01:43,mathstral:latest,bluetooth_on,20.9691,24,9.4475,2.54,0.5,61.0,65.9,Pass
+2025-10-11 08:02:06,mathstral:latest,wifi_status,21.5881,25,9.3047,2.69,0.3,61.0,64.2,Pass
+2025-10-11 08:02:28,mathstral:latest,record_voice,21.5313,23,8.5175,2.7,0.5,61.0,64.8,Pass
+2025-10-11 08:03:13,mathstral:latest,calendar_event,43.7188,74,29.4573,2.51,0.3,61.0,65.9,Pass
+2025-10-11 08:03:55,mathstral:latest,smart_home_temp,41.1275,68,26.3306,2.58,0.2,61.0,64.8,Pass
+2025-10-11 08:04:19,mathstral:latest,math_simple,23.2263,26,9.9567,2.61,0.2,61.0,66.4,Pass
+2025-10-11 08:04:46,mathstral:latest,math_reasoning,26.3229,28,11.0009,2.55,0.5,61.0,66.4,Pass
+2025-10-11 08:05:39,mathstral:latest,logical_reasoning,51.7207,88,36.1712,2.43,0.3,61.0,66.4,Pass
+2025-10-11 08:06:07,mathstral:latest,story_creative,27.071,34,12.8131,2.65,0.5,61.0,65.3,Pass
+2025-10-11 08:06:39,mathstral:latest,summarization,30.2561,37,14.2187,2.6,0.2,61.1,64.2,Pass
+2025-10-11 08:07:19,mathstral:latest,coding_task,39.7801,68,26.2612,2.59,0.2,61.0,64.8,Pass
+2025-10-11 08:07:48,mathstral:latest,analytical_thinking,27.5576,35,13.294,2.63,0.3,61.0,66.4,Pass
+2025-10-11 08:08:11,mathstral:latest,translation_task,22.2529,24,8.9856,2.67,0.2,61.0,65.3,Pass
+2025-10-11 08:08:37,mathstral:latest,definition_task,24.5922,30,11.3208,2.65,0.3,61.0,65.9,Fail (Invalid JSON)
+2025-10-11 08:09:34,mathstral:latest,creative_analogy,55.9269,108,42.4165,2.55,0.5,61.1,64.8,Pass
+2025-10-11 08:10:25,mathstral:latest,compare_models,50.5285,94,37.0069,2.54,0.7,61.0,65.3,Pass
+2025-10-11 08:10:51,mathstral:latest,data_interpretation,24.5752,25,9.5416,2.62,0.0,61.0,66.4,Pass
+2025-10-11 08:11:44,mathstral:latest,critical_thinking,51.9929,92,38.4839,2.39,0.3,61.1,64.8,Pass
+2025-10-11 08:12:10,mathstral:latest,cause_effect,24.8773,30,11.357,2.64,0.3,61.0,63.7,Pass
+2025-10-11 08:12:36,mathstral:latest,math_advanced,25.7598,29,11.4984,2.52,0.0,61.1,66.4,Pass
+2025-10-11 08:13:03,mathstral:latest,language_reasoning,25.9284,29,11.6506,2.49,0.5,61.0,65.3,Fail (Invalid JSON)
+2025-10-11 08:13:28,mathstral:latest,creative_task,23.7703,24,9.2601,2.59,0.5,61.0,65.3,Pass
+2025-10-11 08:13:53,mathstral:latest,science_question,24.281,29,11.0113,2.63,0.5,61.0,66.4,Pass
+2025-10-11 08:14:20,mathstral:latest,moral_reasoning,25.5602,32,12.0472,2.66,0.3,61.1,65.3,Pass
+2025-10-11 08:15:27,mathstral:latest,summary_task,66.1676,125,52.6509,2.37,0.3,61.1,65.3,Fail (Invalid JSON)
+2025-10-11 08:16:19,deepseek-coder:1.3b,turn_on_light,50.731,395,35.9059,11.0,0.7,61.0,65.3,Fail (Invalid JSON)
+2025-10-11 08:17:22,deepseek-coder:1.3b,turn_off_fan,61.7828,626,59.226,10.57,0.3,80.4,63.1,Fail (Invalid JSON)
+2025-10-11 08:18:02,deepseek-coder:1.3b,set_alarm,39.7851,407,36.9857,11.0,0.5,80.3,62.6,Fail (Invalid JSON)
+2025-10-11 08:18:25,deepseek-coder:1.3b,open_browser,21.307,211,18.651,11.31,0.5,80.3,62.6,Fail (Invalid JSON)
+2025-10-11 08:18:57,deepseek-coder:1.3b,weather_check,31.2567,320,28.5961,11.19,0.3,80.3,63.1,Fail (Invalid JSON)
+2025-10-11 08:19:04,deepseek-coder:1.3b,play_music,5.8805,39,3.3618,11.6,0.5,80.3,64.2,Pass
+2025-10-11 08:19:33,deepseek-coder:1.3b,system_status,27.6275,275,25.0184,10.99,0.2,80.4,63.1,Fail (Invalid JSON)
+2025-10-11 08:19:37,deepseek-coder:1.3b,start_timer,3.9446,16,1.3267,12.06,0.3,80.3,62.6,Pass
+2025-10-11 08:19:49,deepseek-coder:1.3b,send_email,11.0135,88,7.8547,11.2,0.3,80.5,61.5,Fail (Invalid JSON)
+2025-10-11 08:20:25,deepseek-coder:1.3b,translate_phrase,34.8303,355,31.9321,11.12,0.3,80.4,62.6,Fail (Invalid JSON)
+2025-10-11 08:20:36,deepseek-coder:1.3b,get_time,10.0394,86,7.4133,11.6,0.3,80.3,63.7,Fail (Invalid JSON)
+2025-10-11 08:21:21,deepseek-coder:1.3b,control_volume,43.8528,435,41.0448,10.6,0.5,24.9,63.7,Fail (Invalid JSON)
+2025-10-11 08:22:10,deepseek-coder:1.3b,find_file,47.8213,487,44.9148,10.84,0.3,24.7,62.0,Pass
+2025-10-11 08:22:38,deepseek-coder:1.3b,check_battery,27.133,277,24.6221,11.25,0.5,24.8,62.0,Fail (Invalid JSON)
+2025-10-11 08:23:01,deepseek-coder:1.3b,launch_app,21.432,213,18.9193,11.26,0.3,24.8,63.1,Fail (Invalid JSON)
+2025-10-11 08:23:41,deepseek-coder:1.3b,bluetooth_on,39.5697,408,37.1451,10.98,0.5,24.8,63.1,Fail (Invalid JSON)
+2025-10-11 08:24:14,deepseek-coder:1.3b,wifi_status,31.8727,327,29.2514,11.18,0.5,24.8,63.1,Fail (Invalid JSON)
+2025-10-11 08:24:45,deepseek-coder:1.3b,record_voice,30.0271,303,27.2675,11.11,0.3,24.8,63.1,Fail (Invalid JSON)
+2025-10-11 08:25:09,deepseek-coder:1.3b,calendar_event,22.7658,219,19.724,11.1,0.3,24.7,62.6,Fail (Invalid JSON)
+2025-10-11 08:25:28,deepseek-coder:1.3b,smart_home_temp,17.9077,167,14.8219,11.27,0.3,24.8,62.0,Fail (Invalid JSON)
+2025-10-11 08:25:43,deepseek-coder:1.3b,math_simple,14.6287,134,11.8246,11.33,0.5,24.8,64.2,Pass
+2025-10-11 08:25:53,deepseek-coder:1.3b,math_reasoning,8.4445,60,5.2381,11.45,0.2,24.7,62.6,Pass
+2025-10-11 08:26:28,deepseek-coder:1.3b,logical_reasoning,33.8534,338,30.6901,11.01,0.2,24.8,63.7,Fail (Invalid JSON)
+2025-10-11 08:27:02,deepseek-coder:1.3b,story_creative,33.7414,343,30.7408,11.16,0.5,24.8,62.0,Fail (Invalid JSON)
+2025-10-11 08:27:28,deepseek-coder:1.3b,summarization,24.6463,238,21.1964,11.23,0.5,24.8,62.6,Fail (Invalid JSON)
+2025-10-11 08:28:08,deepseek-coder:1.3b,coding_task,39.0646,399,36.2117,11.02,0.3,24.7,61.5,Fail (Invalid JSON)
+2025-10-11 08:30:12,deepseek-coder:1.3b,analytical_thinking,123.3329,1160,120.3315,9.64,0.3,24.8,62.0,Fail (Invalid JSON)
+2025-10-11 08:30:27,deepseek-coder:1.3b,translation_task,13.935,120,11.126,10.79,0.3,24.8,63.1,Fail (Invalid JSON)
+2025-10-11 08:35:29,deepseek-coder:1.3b,definition_task,300.1046,0,0.0,0.0,0.3,24.8,62.6,Fail (Invalid JSON)
+2025-10-11 08:35:36,deepseek-coder:1.3b,creative_analogy,6.7832,46,3.9404,11.67,67.2,24.8,62.6,Fail (Invalid JSON)
+2025-10-11 08:35:55,deepseek-coder:1.3b,compare_models,17.5955,167,14.749,11.32,0.3,25.0,62.0,Fail (Invalid JSON)
+2025-10-11 08:36:11,deepseek-coder:1.3b,data_interpretation,15.2957,139,12.206,11.39,0.2,24.7,61.5,Pass
+2025-10-11 08:36:39,deepseek-coder:1.3b,critical_thinking,27.2179,274,24.3747,11.24,0.3,24.7,61.5,Fail (Invalid JSON)
+2025-10-11 08:37:29,deepseek-coder:1.3b,cause_effect,48.7293,497,45.9189,10.82,0.3,24.8,61.5,Pass
+2025-10-11 08:37:52,deepseek-coder:1.3b,math_advanced,21.3344,205,18.2434,11.24,0.3,24.8,63.1,Pass
+2025-10-11 08:38:02,deepseek-coder:1.3b,language_reasoning,9.003,69,5.9146,11.67,0.3,24.7,63.1,Fail (Invalid JSON)
+2025-10-11 08:38:28,deepseek-coder:1.3b,creative_task,25.8554,253,22.8456,11.07,0.3,24.8,63.1,Fail (Invalid JSON)
+2025-10-11 08:38:43,deepseek-coder:1.3b,science_question,13.6759,125,10.9183,11.45,0.3,24.8,63.1,Fail (Invalid JSON)
+2025-10-11 08:43:44,deepseek-coder:1.3b,moral_reasoning,300.0997,0,0.0,0.0,0.5,24.7,62.6,Fail (Invalid JSON)
+2025-10-11 08:44:04,deepseek-coder:1.3b,summary_task,19.17,185,16.3286,11.33,22.6,24.8,61.5,Fail (Invalid JSON)
+2025-10-11 08:45:17,mistral:7b,turn_on_light,72.1705,26,10.6189,2.45,0.3,24.8,63.1,Pass
+2025-10-11 08:45:41,mistral:7b,turn_off_fan,22.6015,26,10.7944,2.41,0.0,83.2,59.3,Pass
+2025-10-11 08:46:25,mistral:7b,set_alarm,42.6488,66,29.2648,2.26,0.3,83.1,59.3,Fail (Invalid JSON)
+2025-10-11 08:46:50,mistral:7b,open_browser,24.4501,29,11.8929,2.44,0.2,83.1,61.5,Pass
+2025-10-11 08:47:14,mistral:7b,weather_check,22.318,24,9.7584,2.46,0.3,83.1,61.5,Pass
+2025-10-11 08:47:38,mistral:7b,play_music,23.2342,26,11.4493,2.27,0.5,83.2,62.0,Pass
+2025-10-11 08:48:14,mistral:7b,system_status,34.7988,53,22.4969,2.36,0.5,83.1,61.5,Pass
+2025-10-11 08:48:36,mistral:7b,start_timer,21.6467,23,9.3362,2.46,0.7,83.2,63.7,Pass
+2025-10-11 08:49:18,mistral:7b,send_email,40.7074,62,26.0463,2.38,0.5,83.2,62.6,Pass
+2025-10-11 08:49:48,mistral:7b,translate_phrase,29.2293,36,14.8551,2.42,0.5,63.9,62.6,Pass
+2025-10-11 08:50:44,mistral:7b,get_time,54.4836,93,42.4334,2.19,0.3,63.8,62.6,Pass
+2025-10-11 08:51:25,mistral:7b,control_volume,40.5794,63,27.2018,2.32,0.3,63.9,63.1,Pass
+2025-10-11 08:51:52,mistral:7b,find_file,25.9796,29,12.3521,2.35,0.5,63.8,63.1,Pass
+2025-10-11 08:52:25,mistral:7b,check_battery,31.3726,47,19.5771,2.4,0.3,63.9,63.1,Pass
+2025-10-11 08:52:48,mistral:7b,launch_app,22.8865,25,11.0927,2.25,0.5,63.8,62.6,Pass
+2025-10-11 08:53:18,mistral:7b,bluetooth_on,28.9438,42,17.421,2.41,0.5,63.8,62.6,Pass
+2025-10-11 08:53:42,mistral:7b,wifi_status,22.949,26,10.6421,2.44,0.5,63.9,63.7,Pass
+2025-10-11 08:54:07,mistral:7b,record_voice,23.7093,26,10.5901,2.46,0.5,63.9,63.1,Pass
+2025-10-11 08:54:55,mistral:7b,calendar_event,46.979,77,32.5577,2.37,0.5,63.9,63.1,Pass
+2025-10-11 08:55:37,mistral:7b,smart_home_temp,40.849,61,25.9564,2.35,0.3,63.8,62.0,Pass
+2025-10-11 08:56:02,mistral:7b,math_simple,24.396,27,11.0519,2.44,0.3,63.8,63.1,Pass
+2025-10-11 08:56:31,mistral:7b,math_reasoning,27.3948,29,11.9087,2.44,0.3,64.0,63.1,Pass
+2025-10-11 08:57:07,mistral:7b,logical_reasoning,35.3084,44,19.5657,2.25,0.5,63.9,64.2,Pass
+2025-10-11 08:57:45,mistral:7b,story_creative,37.3766,55,22.9602,2.4,0.5,63.9,62.0,Pass
+2025-10-11 08:58:24,mistral:7b,summarization,37.7017,50,21.4317,2.33,0.3,63.9,63.7,Pass
+2025-10-11 08:59:05,mistral:7b,coding_task,39.4473,57,25.8261,2.21,0.5,63.9,63.7,Pass
+2025-10-11 09:00:02,mistral:7b,analytical_thinking,56.7814,95,42.3835,2.24,0.3,63.9,62.0,Pass
+2025-10-11 09:00:34,mistral:7b,translation_task,30.2465,40,16.8845,2.37,0.3,63.9,62.0,Fail (Invalid JSON)
+2025-10-11 09:01:08,mistral:7b,definition_task,33.8829,49,20.5156,2.39,0.3,63.9,61.5,Pass
+2025-10-11 09:01:51,mistral:7b,creative_analogy,41.3201,66,27.6945,2.38,0.3,63.9,64.8,Pass
+2025-10-11 09:02:29,mistral:7b,compare_models,37.0455,53,23.4333,2.26,0.3,63.9,63.7,Pass
+2025-10-11 09:03:24,mistral:7b,data_interpretation,54.1578,92,38.9384,2.36,0.5,63.9,63.7,Pass
+2025-10-11 09:05:34,mistral:7b,critical_thinking,129.0854,265,115.4585,2.3,0.7,64.1,63.1,Fail (Invalid JSON)
+2025-10-11 09:06:35,mistral:7b,cause_effect,59.8802,108,46.2617,2.33,0.3,63.9,63.1,Pass
+2025-10-11 09:07:03,mistral:7b,math_advanced,26.7649,30,12.3553,2.43,0.5,64.0,64.2,Pass
+2025-10-11 09:07:41,mistral:7b,language_reasoning,37.6521,52,23.2506,2.24,0.3,63.9,63.1,Fail (Invalid JSON)
+2025-10-11 09:08:20,mistral:7b,creative_task,37.3264,54,22.6748,2.38,0.5,63.9,62.0,Pass
+2025-10-11 09:09:40,mistral:7b,science_question,79.4545,151,66.0765,2.29,0.3,63.9,64.2,Pass
+2025-10-11 09:10:46,mistral:7b,moral_reasoning,64.524,111,50.9015,2.18,0.3,64.0,64.8,Pass
+2025-10-11 09:12:02,mistral:7b,summary_task,75.5351,139,61.9143,2.25,0.3,63.9,62.6,Pass
+2025-10-11 09:12:37,orca-mini:3b,turn_on_light,33.7708,0,0.0,0.0,0.7,63.9,65.3,Fail (Invalid JSON)
+2025-10-11 09:13:15,orca-mini:3b,turn_off_fan,37.1031,22,3.7356,5.89,2.3,6.1,60.4,Pass
+2025-10-11 09:13:55,orca-mini:3b,set_alarm,38.9286,155,32.3141,4.8,0.3,38.3,60.9,Pass
+2025-10-11 09:14:07,orca-mini:3b,open_browser,11.0273,24,4.756,5.05,0.0,37.5,62.6,Pass
+2025-10-11 09:14:22,orca-mini:3b,weather_check,13.9715,44,7.7026,5.71,0.5,37.5,62.6,Fail (Invalid JSON)
+2025-10-11 09:14:34,orca-mini:3b,play_music,10.9279,28,5.0001,5.6,0.3,37.6,63.7,Pass
+2025-10-11 09:14:59,orca-mini:3b,system_status,24.3883,89,18.2355,4.88,0.5,37.5,62.6,Pass
+2025-10-11 09:15:17,orca-mini:3b,start_timer,16.2825,59,10.1249,5.83,0.0,37.5,63.1,Pass
+2025-10-11 09:15:53,orca-mini:3b,send_email,35.4552,142,28.1052,5.05,0.3,37.5,64.2,Fail (Invalid JSON)
+2025-10-11 09:16:10,orca-mini:3b,translate_phrase,16.2878,52,9.5491,5.45,0.3,37.5,64.2,Fail (Invalid JSON)
+2025-10-11 09:16:32,orca-mini:3b,get_time,20.6584,73,14.6144,5.0,0.5,37.5,64.8,Fail (Invalid JSON)
+2025-10-11 09:16:44,orca-mini:3b,control_volume,10.6468,24,4.0339,5.95,0.3,37.5,63.7,Pass
+2025-10-11 09:17:20,orca-mini:3b,find_file,35.0523,151,28.3025,5.34,0.3,37.5,65.9,Pass
+2025-10-11 09:17:31,orca-mini:3b,check_battery,9.8122,23,3.8868,5.92,0.5,37.6,64.8,Pass
+2025-10-11 09:17:43,orca-mini:3b,launch_app,11.4675,33,5.6592,5.83,0.3,37.6,64.2,Pass
+2025-10-11 09:18:08,orca-mini:3b,bluetooth_on,24.4121,88,18.6011,4.73,0.3,37.6,64.8,Pass
+2025-10-11 09:18:22,orca-mini:3b,wifi_status,12.9055,39,6.7484,5.78,0.3,37.5,63.7,Pass
+2025-10-11 09:18:48,orca-mini:3b,record_voice,24.8107,93,18.3108,5.08,0.0,37.6,65.3,Pass
+2025-10-11 09:19:00,orca-mini:3b,calendar_event,10.6051,21,3.4891,6.02,0.7,37.6,63.7,Pass
+2025-10-11 09:19:27,orca-mini:3b,smart_home_temp,26.6486,92,19.1906,4.79,0.0,37.6,63.7,Pass
+2025-10-11 09:19:56,orca-mini:3b,math_simple,27.79,117,21.1724,5.53,0.3,37.6,63.7,Pass
+2025-10-11 09:20:46,orca-mini:3b,math_reasoning,49.1076,199,41.5279,4.79,0.5,37.6,64.8,Fail (Invalid JSON)
+2025-10-11 09:21:36,orca-mini:3b,logical_reasoning,48.1956,219,40.7329,5.38,0.5,37.6,64.2,Pass
+2025-10-11 09:21:48,orca-mini:3b,story_creative,11.3197,21,4.3481,4.83,0.3,37.6,64.2,Pass
+2025-10-11 09:22:01,orca-mini:3b,summarization,11.8612,23,3.9141,5.88,0.5,37.5,65.9,Fail (Invalid JSON)
+2025-10-11 09:22:37,orca-mini:3b,coding_task,35.3857,129,28.6344,4.51,0.3,37.6,64.8,Fail (Invalid JSON)
+2025-10-11 09:23:32,orca-mini:3b,analytical_thinking,53.8138,211,46.6958,4.52,0.2,37.6,64.2,Fail (Invalid JSON)
+2025-10-11 09:24:13,orca-mini:3b,translation_task,39.6356,171,33.0211,5.18,0.2,37.5,63.7,Pass
+2025-10-11 09:24:31,orca-mini:3b,definition_task,17.1156,59,10.5028,5.62,0.3,37.6,64.2,Pass
+2025-10-11 09:25:01,orca-mini:3b,creative_analogy,28.9245,122,22.3111,5.47,0.2,37.6,65.9,Pass
+2025-10-11 09:25:42,orca-mini:3b,compare_models,39.9228,179,33.0619,5.41,0.3,37.6,64.2,Fail (Invalid JSON)
+2025-10-11 09:26:21,orca-mini:3b,data_interpretation,38.4494,138,30.9859,4.45,0.5,37.6,65.9,Pass
+2025-10-11 09:26:37,orca-mini:3b,critical_thinking,14.6701,45,7.9294,5.68,0.2,37.6,65.3,Fail (Invalid JSON)
+2025-10-11 09:26:49,orca-mini:3b,cause_effect,11.4445,28,4.8292,5.8,0.3,37.6,65.9,Fail (Invalid JSON)
+2025-10-11 09:27:56,orca-mini:3b,math_advanced,65.9826,303,58.8615,5.15,0.5,37.6,64.8,Pass
+2025-10-11 09:28:17,orca-mini:3b,language_reasoning,19.683,70,12.557,5.57,0.3,37.7,66.4,Pass
+2025-10-11 09:28:32,orca-mini:3b,creative_task,13.9755,34,6.7416,5.04,0.0,37.7,65.3,Pass
+2025-10-11 09:29:35,orca-mini:3b,science_question,62.6049,250,56.1,4.46,0.3,37.6,64.2,Pass
+2025-10-11 09:30:01,orca-mini:3b,moral_reasoning,24.6887,98,17.9497,5.46,0.3,37.7,63.7,Pass
+2025-10-11 09:30:13,orca-mini:3b,summary_task,11.0836,22,4.3424,5.07,0.3,37.6,65.3,Pass
+2025-10-11 09:30:40,stablelm2:1.6b,turn_on_light,25.6577,122,10.6564,11.45,0.5,37.6,64.8,Fail (Invalid JSON)
+2025-10-11 09:30:52,stablelm2:1.6b,turn_off_fan,11.2077,101,8.8521,11.41,0.3,60.5,62.6,Pass
+2025-10-11 09:31:33,stablelm2:1.6b,set_alarm,39.4474,398,36.8428,10.8,0.3,59.9,63.1,Fail (Invalid JSON)
+2025-10-11 09:32:43,stablelm2:1.6b,open_browser,69.9307,665,67.4152,9.86,0.5,60.1,62.6,Fail (Invalid JSON)
+2025-10-11 09:32:56,stablelm2:1.6b,weather_check,11.3311,100,8.8194,11.34,0.7,60.0,64.2,Pass
+2025-10-11 09:33:27,stablelm2:1.6b,play_music,29.7474,290,27.3909,10.59,0.2,60.1,63.7,Fail (Invalid JSON)
+2025-10-11 09:34:01,stablelm2:1.6b,system_status,33.7852,331,31.3191,10.57,0.3,60.0,64.2,Fail (Invalid JSON)
+2025-10-11 09:34:20,stablelm2:1.6b,start_timer,18.1412,173,15.6757,11.04,0.3,60.0,63.7,Pass
+2025-10-11 09:34:39,stablelm2:1.6b,send_email,17.3764,159,14.4924,10.97,0.3,60.0,62.6,Pass
+2025-10-11 09:34:56,stablelm2:1.6b,translate_phrase,16.1118,147,13.4161,10.96,0.5,60.0,64.2,Pass
+2025-10-11 09:35:35,stablelm2:1.6b,get_time,37.5723,365,35.1094,10.4,0.5,60.0,64.2,Fail (Invalid JSON)
+2025-10-11 09:35:54,stablelm2:1.6b,control_volume,18.4759,175,15.9657,10.96,0.5,28.0,62.6,Fail (Invalid JSON)
+2025-10-11 09:36:12,stablelm2:1.6b,find_file,17.2157,162,14.5239,11.15,0.3,27.9,63.1,Pass
+2025-10-11 09:36:39,stablelm2:1.6b,check_battery,26.0303,254,23.6721,10.73,0.2,28.1,63.1,Fail (Invalid JSON)
+2025-10-11 09:36:57,stablelm2:1.6b,launch_app,16.1864,154,13.8688,11.1,0.5,28.0,64.2,Fail (Invalid JSON)
+2025-10-11 09:37:12,stablelm2:1.6b,bluetooth_on,14.8552,142,12.588,11.28,0.3,28.1,63.1,Pass
+2025-10-11 09:37:34,stablelm2:1.6b,wifi_status,20.1109,194,17.6483,10.99,0.5,28.1,64.2,Fail (Invalid JSON)
+2025-10-11 09:37:45,stablelm2:1.6b,record_voice,10.396,90,7.8472,11.47,0.0,28.0,64.2,Pass
+2025-10-11 09:37:58,stablelm2:1.6b,calendar_event,12.3496,108,9.5139,11.35,0.2,28.1,63.1,Pass
+2025-10-11 09:38:18,stablelm2:1.6b,smart_home_temp,18.6886,178,15.9905,11.13,0.5,28.1,64.2,Fail (Invalid JSON)
+2025-10-11 09:38:41,stablelm2:1.6b,math_simple,21.8806,211,19.3324,10.91,0.3,28.0,64.8,Fail (Invalid JSON)
+2025-10-11 09:39:10,stablelm2:1.6b,math_reasoning,27.7647,267,24.7912,10.77,0.5,28.0,63.1,Fail (Invalid JSON)
+2025-10-11 09:39:35,stablelm2:1.6b,logical_reasoning,24.2557,227,21.233,10.69,0.0,28.0,63.1,Pass
+2025-10-11 09:39:48,stablelm2:1.6b,story_creative,11.6653,101,8.9281,11.31,0.5,28.1,64.2,Pass
+2025-10-11 09:39:59,stablelm2:1.6b,summarization,10.7084,84,7.4397,11.29,0.3,28.1,63.7,Fail (Invalid JSON)
+2025-10-11 09:40:13,stablelm2:1.6b,coding_task,12.8095,115,10.1667,11.31,0.2,28.0,63.1,Pass
+2025-10-11 09:40:35,stablelm2:1.6b,analytical_thinking,21.2205,200,18.3349,10.91,0.5,28.1,63.1,Pass
+2025-10-11 09:40:48,stablelm2:1.6b,translation_task,11.2314,97,8.6824,11.17,0.3,28.2,62.6,Pass
+2025-10-11 09:40:57,stablelm2:1.6b,definition_task,8.2287,64,5.5818,11.47,0.5,28.1,64.2,Pass
+2025-10-11 09:41:20,stablelm2:1.6b,creative_analogy,22.6844,218,20.0437,10.88,0.2,28.0,63.1,Pass
+2025-10-11 09:41:42,stablelm2:1.6b,compare_models,21.0117,201,18.3138,10.98,0.5,28.2,63.1,Pass
+2025-10-11 09:42:05,stablelm2:1.6b,data_interpretation,21.8719,203,18.8948,10.74,0.3,28.1,64.2,Fail (Invalid JSON)
+2025-10-11 09:42:33,stablelm2:1.6b,critical_thinking,26.4305,254,23.6897,10.72,0.2,28.0,63.1,Fail (Invalid JSON)
+2025-10-11 09:42:43,stablelm2:1.6b,cause_effect,9.556,80,6.8569,11.67,0.3,28.1,64.2,Pass
+2025-10-11 09:42:57,stablelm2:1.6b,math_advanced,13.0048,114,10.1186,11.27,0.3,28.1,64.2,Pass
+2025-10-11 09:43:23,stablelm2:1.6b,language_reasoning,24.5958,233,21.7149,10.73,0.2,28.1,64.2,Fail (Invalid JSON)
+2025-10-11 09:44:14,stablelm2:1.6b,creative_task,50.5455,486,47.6567,10.2,0.5,28.1,64.2,Fail (Invalid JSON)
+2025-10-11 09:44:28,stablelm2:1.6b,science_question,12.3532,110,9.7984,11.23,0.3,28.1,62.6,Pass
+2025-10-11 09:45:07,stablelm2:1.6b,moral_reasoning,38.0239,371,35.3811,10.49,0.3,28.0,64.2,Fail (Invalid JSON)
+2025-10-11 09:45:23,stablelm2:1.6b,summary_task,14.9625,132,12.2723,10.76,0.3,28.1,64.2,Fail (Invalid JSON)
+2025-10-11 09:45:36,tinyllama:latest,turn_on_light,12.0554,34,1.8775,18.11,0.3,28.1,63.1,Pass
+2025-10-11 09:45:49,tinyllama:latest,turn_off_fan,11.8584,172,9.8502,17.46,0.0,37.4,62.0,Pass
+2025-10-11 09:45:54,tinyllama:latest,set_alarm,4.5316,41,2.3158,17.7,0.3,36.9,64.2,Pass
+2025-10-11 09:46:01,tinyllama:latest,open_browser,6.0563,71,3.9379,18.03,0.2,36.8,63.7,Pass
+2025-10-11 09:46:27,tinyllama:latest,weather_check,24.489,373,22.373,16.67,0.3,36.7,62.6,Fail (Invalid JSON)
+2025-10-11 09:46:33,tinyllama:latest,play_music,5.244,59,3.2347,18.24,0.0,36.6,63.1,Pass
+2025-10-11 09:46:43,tinyllama:latest,system_status,9.2223,128,7.1843,17.82,0.3,36.7,63.1,Fail (Invalid JSON)
+2025-10-11 09:46:48,tinyllama:latest,start_timer,3.4973,26,1.4188,18.33,0.5,36.6,62.6,Pass
+2025-10-11 09:46:56,tinyllama:latest,send_email,6.8051,79,4.4042,17.94,0.3,36.7,63.1,Pass
+2025-10-11 09:47:02,tinyllama:latest,translate_phrase,5.2012,53,2.9141,18.19,0.3,36.6,63.1,Pass
+2025-10-11 09:47:36,tinyllama:latest,get_time,33.4316,527,31.4224,16.77,0.5,36.7,62.0,Fail (Invalid JSON)
+2025-10-11 09:47:43,tinyllama:latest,control_volume,5.7986,66,3.6161,18.25,0.3,36.7,64.8,Fail (Invalid JSON)
+2025-10-11 09:47:55,tinyllama:latest,find_file,11.0045,154,8.8229,17.45,0.3,36.7,64.8,Fail (Invalid JSON)
+2025-10-11 09:48:05,tinyllama:latest,check_battery,9.4032,133,7.434,17.89,0.3,36.6,63.1,Pass
+2025-10-11 09:48:13,tinyllama:latest,launch_app,6.3032,71,4.3332,16.39,0.2,36.6,63.7,Pass
+2025-10-11 09:48:20,tinyllama:latest,bluetooth_on,6.169,71,4.1994,16.91,0.5,36.7,62.6,Pass
+2025-10-11 09:48:28,tinyllama:latest,wifi_status,6.8165,85,4.7784,17.79,0.3,36.6,64.8,Pass
+2025-10-11 09:48:36,tinyllama:latest,record_voice,7.2474,92,5.0942,18.06,0.0,36.6,64.8,Pass
+2025-10-11 09:48:42,tinyllama:latest,calendar_event,4.888,44,2.5134,17.51,0.5,36.6,64.2,Pass
+2025-10-11 09:48:51,tinyllama:latest,smart_home_temp,8.459,109,6.0548,18.0,0.5,36.6,62.6,Pass
+2025-10-11 09:48:59,tinyllama:latest,math_simple,6.6527,81,4.4675,18.13,0.5,36.6,63.7,Fail (Invalid JSON)
+2025-10-11 09:49:12,tinyllama:latest,math_reasoning,12.4423,176,9.9194,17.74,0.5,36.7,64.2,Pass
+2025-10-11 09:49:23,tinyllama:latest,logical_reasoning,9.7021,123,7.1758,17.14,0.5,36.6,63.1,Pass
+2025-10-11 09:49:29,tinyllama:latest,story_creative,4.6312,38,2.3175,16.4,0.3,36.6,63.7,Pass
+2025-10-11 09:49:48,tinyllama:latest,summarization,18.6402,275,15.8722,17.33,0.0,36.7,64.2,Fail (Invalid JSON)
+2025-10-11 09:50:15,tinyllama:latest,coding_task,25.9291,395,23.6388,16.71,0.2,36.6,64.8,Fail (Invalid JSON)
+2025-10-11 09:50:25,tinyllama:latest,analytical_thinking,8.597,101,6.19,16.32,0.3,36.7,63.7,Pass
+2025-10-11 09:50:29,tinyllama:latest,translation_task,3.3295,20,1.1448,17.47,0.5,14.8,63.1,Pass
+2025-10-11 09:50:35,tinyllama:latest,definition_task,4.6353,45,2.4506,18.36,0.2,14.7,63.1,Pass
+2025-10-11 09:50:45,tinyllama:latest,creative_analogy,9.4732,129,7.2552,17.78,0.2,14.6,65.3,Pass
+2025-10-11 09:50:56,tinyllama:latest,compare_models,9.8382,120,7.5176,15.96,0.3,14.6,63.1,Pass
+2025-10-11 09:51:15,tinyllama:latest,data_interpretation,17.331,258,14.8837,17.33,0.2,14.7,64.8,Fail (Invalid JSON)
+2025-10-11 09:51:21,tinyllama:latest,critical_thinking,5.8504,58,3.3721,17.2,0.3,14.5,65.3,Pass
+2025-10-11 09:51:31,tinyllama:latest,cause_effect,8.0947,104,5.876,17.7,0.0,14.6,64.2,Pass
+2025-10-11 09:51:35,tinyllama:latest,math_advanced,3.5958,24,1.2734,18.85,0.5,14.7,65.9,Pass
+2025-10-11 09:51:41,tinyllama:latest,language_reasoning,4.5766,41,2.2563,18.17,0.2,14.6,65.3,Pass
+2025-10-11 09:51:51,tinyllama:latest,creative_task,9.178,118,6.8045,17.34,0.2,14.6,62.6,Pass
+2025-10-11 09:51:57,tinyllama:latest,science_question,4.6801,41,2.4953,16.43,0.3,14.6,64.2,Pass
+2025-10-11 09:52:04,tinyllama:latest,moral_reasoning,6.9036,85,4.6856,18.14,0.5,14.6,64.2,Pass
+2025-10-11 09:52:13,tinyllama:latest,summary_task,7.6817,98,5.4311,18.04,0.2,14.6,64.2,Pass
+2025-10-11 09:52:53,phi3:mini,turn_on_light,38.9604,35,6.8457,5.11,0.2,14.6,63.7,Pass
+2025-10-11 09:53:08,phi3:mini,turn_off_fan,13.5793,33,6.6003,5.0,0.3,60.0,61.5,Pass
+2025-10-11 09:55:26,phi3:mini,set_alarm,136.9962,565,129.1953,4.37,0.5,59.9,62.0,Fail (Invalid JSON)
+2025-10-11 09:56:12,phi3:mini,open_browser,45.2232,168,37.9819,4.42,0.3,59.7,64.2,Pass
+2025-10-11 09:58:04,phi3:mini,weather_check,110.9621,419,103.5807,4.05,0.2,59.7,63.7,Fail (Invalid JSON)
+2025-10-11 10:03:05,phi3:mini,play_music,300.1015,0,0.0,0.0,0.2,51.2,63.1,Fail (Invalid JSON)
+2025-10-11 10:03:53,phi3:mini,system_status,46.8655,161,39.7633,4.05,36.5,51.2,63.1,Pass
+2025-10-11 10:04:23,phi3:mini,start_timer,28.9507,90,21.7027,4.15,0.5,51.2,62.6,Pass
+2025-10-11 10:04:45,phi3:mini,send_email,21.6305,60,13.136,4.57,0.5,51.2,63.7,Pass
+2025-10-11 10:05:02,phi3:mini,translate_phrase,15.4309,38,7.6381,4.98,0.3,51.2,63.7,Pass
+2025-10-11 10:05:52,phi3:mini,get_time,49.3669,192,42.4003,4.53,0.2,51.2,63.7,Fail (Invalid JSON)
+2025-10-11 10:06:12,phi3:mini,control_volume,18.4686,45,10.8094,4.16,0.3,51.2,64.8,Pass
+2025-10-11 10:06:28,phi3:mini,find_file,15.3395,35,7.5627,4.63,0.2,51.2,63.7,Pass
+2025-10-11 10:06:51,phi3:mini,check_battery,22.0159,73,15.1696,4.81,0.2,51.2,64.8,Pass
+2025-10-11 10:07:06,phi3:mini,launch_app,13.6435,34,6.7973,5.0,0.3,51.2,64.8,Pass
+2025-10-11 10:07:20,phi3:mini,bluetooth_on,13.7291,35,7.005,5.0,0.5,51.2,63.7,Pass
+2025-10-11 10:07:44,phi3:mini,wifi_status,22.8761,70,15.7614,4.44,0.3,51.2,63.7,Pass
+2025-10-11 10:08:16,phi3:mini,record_voice,30.7236,109,23.1924,4.7,0.2,51.2,65.3,Pass
+2025-10-11 10:08:53,phi3:mini,calendar_event,36.3538,117,27.9843,4.18,0.2,51.2,65.3,Pass
+2025-10-11 10:09:33,phi3:mini,smart_home_temp,38.0832,130,29.5908,4.39,0.0,51.3,64.8,Pass
+2025-10-11 10:10:32,phi3:mini,math_simple,58.6439,203,50.9878,3.98,0.2,51.2,64.2,Fail (Invalid JSON)
+2025-10-11 10:14:55,phi3:mini,math_reasoning,261.4749,994,252.554,3.94,0.0,51.2,62.6,Fail (Invalid JSON)
+2025-10-11 10:15:12,phi3:mini,logical_reasoning,15.8678,35,6.9395,5.04,0.3,51.2,63.1,Pass
+2025-10-11 10:15:39,phi3:mini,story_creative,26.5626,88,18.3728,4.79,0.5,51.2,64.8,Pass
+2025-10-11 10:19:13,phi3:mini,summarization,212.5591,768,202.8104,3.79,0.3,51.2,64.2,Fail (Invalid JSON)
+2025-10-11 10:19:35,phi3:mini,coding_task,21.8174,65,14.0362,4.63,0.3,51.2,62.6,Pass
+2025-10-11 10:20:00,phi3:mini,analytical_thinking,23.7463,68,15.2567,4.46,0.5,51.3,64.2,Pass
+2025-10-11 10:20:50,phi3:mini,translation_task,49.2599,173,41.5924,4.16,0.7,51.3,66.4,Pass
+2025-10-11 10:21:14,phi3:mini,definition_task,22.679,61,15.014,4.06,0.3,51.2,63.7,Pass
+2025-10-11 10:21:58,phi3:mini,creative_analogy,42.4765,140,34.6631,4.04,0.2,51.2,64.8,Pass
+2025-10-11 10:23:41,phi3:mini,compare_models,102.53,381,94.5472,4.03,0.5,51.2,65.3,Fail (Invalid JSON)
+2025-10-11 10:24:57,phi3:mini,data_interpretation,74.8926,254,66.2733,3.83,0.7,51.5,59.3,Fail (Invalid JSON)
+2025-10-11 10:25:20,phi3:mini,critical_thinking,21.676,56,13.1853,4.25,0.3,51.5,48.3,Pass
+2025-10-11 10:25:37,phi3:mini,cause_effect,16.5226,42,8.7354,4.81,0.3,51.5,48.3,Pass
+2025-10-11 10:26:16,phi3:mini,math_advanced,37.57,125,29.381,4.25,0.0,51.5,49.4,Pass
+2025-10-11 10:26:34,phi3:mini,language_reasoning,17.18,44,8.9793,4.9,0.0,51.5,47.2,Fail (Invalid JSON)
+2025-10-11 10:27:00,phi3:mini,creative_task,25.1643,82,16.8191,4.88,0.2,51.5,49.4,Pass
+2025-10-11 10:28:53,phi3:mini,science_question,111.4312,435,103.9083,4.19,0.3,51.5,49.4,Fail (Invalid JSON)
+2025-10-11 10:29:51,phi3:mini,moral_reasoning,57.0055,198,49.2243,4.02,0.2,51.5,48.3,Fail (Invalid JSON)
+2025-10-11 10:30:19,phi3:mini,summary_task,26.9627,93,19.0072,4.89,0.2,51.5,53.2,Pass
+2025-10-11 10:30:47,gemma2:2b,turn_on_light,27.0205,24,3.8477,6.24,0.7,51.5,58.2,Pass
+2025-10-11 10:30:55,gemma2:2b,turn_off_fan,7.2486,22,3.6229,6.07,0.0,77.6,55.4,Pass
+2025-10-11 10:31:06,gemma2:2b,set_alarm,9.955,36,5.9418,6.06,0.3,77.7,56.0,Pass
+2025-10-11 10:31:17,gemma2:2b,open_browser,9.8085,36,6.055,5.95,0.5,77.5,57.6,Pass
+2025-10-11 10:31:27,gemma2:2b,weather_check,9.29,34,5.5378,6.14,0.8,77.5,58.7,Pass
+2025-10-11 10:31:37,gemma2:2b,play_music,8.6166,31,5.0691,6.12,0.3,77.5,59.8,Pass
+2025-10-11 10:31:46,gemma2:2b,system_status,8.538,30,4.8522,6.18,0.5,77.5,60.4,Pass
+2025-10-11 10:31:56,gemma2:2b,start_timer,8.7616,30,5.0671,5.92,0.2,77.5,58.7,Pass
+2025-10-11 10:32:06,gemma2:2b,send_email,8.6805,27,4.4391,6.08,0.3,77.6,58.7,Pass
+2025-10-11 10:32:15,gemma2:2b,translate_phrase,8.3886,27,4.3761,6.17,0.2,77.7,59.3,Pass
+2025-10-11 10:32:24,gemma2:2b,get_time,8.1641,28,4.5467,6.16,0.5,77.5,60.9,Pass
+2025-10-11 10:32:34,gemma2:2b,control_volume,8.9306,31,5.0658,6.12,0.3,77.7,60.4,Pass
+2025-10-11 10:32:44,gemma2:2b,find_file,9.0214,30,4.9978,6.0,0.3,77.7,60.9,Pass
+2025-10-11 10:32:53,gemma2:2b,check_battery,7.9427,27,4.3777,6.17,0.5,77.7,59.8,Pass
+2025-10-11 10:33:03,gemma2:2b,launch_app,8.4476,28,4.9734,5.63,0.3,77.6,60.4,Pass
+2025-10-11 10:33:12,gemma2:2b,bluetooth_on,7.9355,28,4.5316,6.18,0.5,77.6,60.4,Pass
+2025-10-11 10:33:21,gemma2:2b,wifi_status,8.8817,32,5.19,6.17,0.3,77.7,59.3,Pass
+2025-10-11 10:33:31,gemma2:2b,record_voice,8.4511,28,4.5265,6.19,0.2,77.5,59.8,Pass
+2025-10-11 10:33:41,gemma2:2b,calendar_event,9.0069,29,4.7099,6.16,0.3,77.7,59.8,Pass
+2025-10-11 10:33:51,gemma2:2b,smart_home_temp,9.1652,29,5.0019,5.8,0.5,77.6,60.9,Pass
+2025-10-11 10:34:00,gemma2:2b,math_simple,7.6087,23,3.6764,6.26,0.2,77.7,60.9,Pass
+2025-10-11 10:34:09,gemma2:2b,math_reasoning,8.151,22,3.5455,6.21,0.3,77.8,59.8,Pass
+2025-10-11 10:34:19,gemma2:2b,logical_reasoning,9.4323,28,4.9065,5.71,0.3,77.7,60.9,Pass
+2025-10-11 10:34:30,gemma2:2b,story_creative,9.4344,31,5.2715,5.88,0.5,77.8,60.9,Fail (Invalid JSON)
+2025-10-11 10:34:43,gemma2:2b,summarization,12.8109,48,8.066,5.95,0.2,77.9,60.4,Pass
+2025-10-11 10:34:58,gemma2:2b,coding_task,13.6172,58,9.6155,6.03,0.5,77.8,61.5,Pass
+2025-10-11 10:35:14,gemma2:2b,analytical_thinking,15.3369,61,10.9841,5.55,0.7,77.9,60.4,Pass
+2025-10-11 10:35:23,gemma2:2b,translation_task,7.6659,23,3.8804,5.93,0.2,77.9,61.5,Pass
+2025-10-11 10:35:36,gemma2:2b,definition_task,12.1694,50,8.2338,6.07,0.3,33.2,59.8,Pass
+2025-10-11 10:36:08,gemma2:2b,creative_analogy,30.923,147,26.7218,5.5,0.3,32.8,61.5,Pass
+2025-10-11 10:36:25,gemma2:2b,compare_models,15.7681,70,11.6994,5.98,0.2,32.7,61.5,Pass
+2025-10-11 10:36:38,gemma2:2b,data_interpretation,11.6806,40,7.2243,5.54,0.2,33.0,60.4,Pass
+2025-10-11 10:37:52,gemma2:2b,critical_thinking,73.4978,380,69.4165,5.47,0.3,32.9,61.5,Pass
+2025-10-11 10:38:03,gemma2:2b,cause_effect,9.5659,33,5.492,6.01,0.2,32.8,61.5,Pass
+2025-10-11 10:38:13,gemma2:2b,math_advanced,8.869,26,4.5507,5.71,1.8,32.9,62.0,Pass
+2025-10-11 10:38:23,gemma2:2b,language_reasoning,9.1396,30,4.8982,6.12,0.7,33.2,60.4,Fail (Invalid JSON)
+2025-10-11 10:38:34,gemma2:2b,creative_task,10.025,33,5.736,5.75,0.5,32.9,60.4,Fail (Invalid JSON)
+2025-10-11 10:38:55,gemma2:2b,science_question,20.2514,99,16.5539,5.98,0.3,32.9,60.9,Pass
+2025-10-11 10:39:06,gemma2:2b,moral_reasoning,9.9761,36,5.9779,6.02,0.2,32.8,61.5,Pass
+2025-10-11 10:39:17,gemma2:2b,summary_task,10.0454,37,6.0465,6.12,0.2,32.9,60.4,Pass
+2025-10-11 10:39:24,qwen2:0.5b,turn_on_light,6.3054,20,0.6406,31.22,0.5,32.8,62.6,Pass
+2025-10-11 10:39:27,qwen2:0.5b,turn_off_fan,1.6201,26,0.8641,30.09,0.3,40.8,58.2,Pass
+2025-10-11 10:39:30,qwen2:0.5b,set_alarm,2.3136,35,1.4749,23.73,0.2,40.6,58.2,Pass
+2025-10-11 10:39:33,qwen2:0.5b,open_browser,1.8145,32,1.0203,31.36,0.3,40.1,58.7,Pass
+2025-10-11 10:39:41,qwen2:0.5b,weather_check,6.7271,176,5.9579,29.54,0.3,39.8,59.8,Fail (Invalid JSON)
+2025-10-11 10:39:44,qwen2:0.5b,play_music,1.6856,21,0.9369,22.41,0.5,39.2,61.5,Pass
+2025-10-11 10:39:48,qwen2:0.5b,system_status,3.6357,79,2.8556,27.67,0.2,39.3,58.7,Pass
+2025-10-11 10:39:51,qwen2:0.5b,start_timer,1.7191,26,0.9557,27.21,0.3,39.2,61.5,Pass
+2025-10-11 10:39:54,qwen2:0.5b,send_email,1.8714,30,0.9636,31.13,0.2,39.3,58.7,Pass
+2025-10-11 10:39:57,qwen2:0.5b,translate_phrase,2.2025,29,1.3664,21.22,2.7,39.3,62.0,Pass
+2025-10-11 10:40:00,qwen2:0.5b,get_time,1.9938,28,1.2103,23.13,0.3,39.3,58.7,Pass
+2025-10-11 10:40:03,qwen2:0.5b,control_volume,2.4873,38,1.6773,22.66,0.3,39.3,58.7,Pass
+2025-10-11 10:40:07,qwen2:0.5b,find_file,2.109,32,1.3031,24.56,0.3,39.3,60.4,Pass
+2025-10-11 10:40:09,qwen2:0.5b,check_battery,1.7655,32,1.0134,31.58,0.2,39.4,60.4,Pass
+2025-10-11 10:40:12,qwen2:0.5b,launch_app,1.4897,24,0.749,32.04,0.3,39.4,59.8,Pass
+2025-10-11 10:40:14,qwen2:0.5b,bluetooth_on,1.6039,18,0.8741,20.59,0.0,39.4,59.3,Pass
+2025-10-11 10:40:17,qwen2:0.5b,wifi_status,1.7675,27,0.9886,27.31,0.2,39.4,59.8,Pass
+2025-10-11 10:40:20,qwen2:0.5b,record_voice,1.6468,19,0.8219,23.12,0.3,39.4,58.2,Pass
+2025-10-11 10:40:23,qwen2:0.5b,calendar_event,2.5644,49,1.665,29.43,0.3,39.5,60.4,Pass
+2025-10-11 10:40:27,qwen2:0.5b,smart_home_temp,2.7738,50,1.9043,26.26,0.3,39.5,59.3,Pass
+2025-10-11 10:40:30,qwen2:0.5b,math_simple,1.6372,22,0.797,27.6,0.5,39.5,60.4,Pass
+2025-10-11 10:40:34,qwen2:0.5b,math_reasoning,2.9575,56,2.0,28.0,0.2,39.5,59.8,Fail (Invalid JSON)
+2025-10-11 10:40:37,qwen2:0.5b,logical_reasoning,2.1366,32,1.1814,27.09,0.2,39.6,59.8,Pass
+2025-10-11 10:40:41,qwen2:0.5b,story_creative,3.1937,46,2.3314,19.73,0.2,39.5,58.7,Pass
+2025-10-11 10:40:45,qwen2:0.5b,summarization,2.6021,49,1.5917,30.78,0.3,39.4,58.2,Pass
+2025-10-11 10:40:47,qwen2:0.5b,coding_task,1.4843,18,0.6469,27.83,0.3,39.5,59.3,Pass
+2025-10-11 10:40:53,qwen2:0.5b,analytical_thinking,4.4791,90,3.5769,25.16,0.5,39.4,59.8,Pass
+2025-10-11 10:40:56,qwen2:0.5b,translation_task,1.916,33,1.1256,29.32,0.5,39.3,60.4,Pass
+2025-10-11 10:40:59,qwen2:0.5b,definition_task,2.3389,38,1.5134,25.11,0.3,39.5,59.3,Fail (Invalid JSON)
+2025-10-11 10:41:04,qwen2:0.5b,creative_analogy,4.4803,108,3.6416,29.66,0.2,39.3,59.8,Pass
+2025-10-11 10:41:08,qwen2:0.5b,compare_models,2.1951,37,1.3451,27.51,0.0,39.4,60.9,Pass
+2025-10-11 10:41:11,qwen2:0.5b,data_interpretation,2.7055,48,1.7736,27.06,0.3,39.4,60.4,Pass
+2025-10-11 10:41:15,qwen2:0.5b,critical_thinking,2.201,32,1.3367,23.94,0.3,39.4,60.4,Pass
+2025-10-11 10:41:17,qwen2:0.5b,cause_effect,1.8314,28,0.9814,28.53,0.3,39.5,59.3,Pass
+2025-10-11 10:41:20,qwen2:0.5b,math_advanced,1.8827,25,0.9858,25.36,0.2,39.5,59.8,Pass
+2025-10-11 10:41:23,qwen2:0.5b,language_reasoning,1.6374,24,0.7616,31.51,0.2,39.5,58.7,Pass
+2025-10-11 10:41:26,qwen2:0.5b,creative_task,1.7803,28,0.8938,31.33,0.0,39.5,60.9,Pass
+2025-10-11 10:41:33,qwen2:0.5b,science_question,6.6661,175,5.8582,29.87,0.2,39.5,58.7,Pass
+2025-10-11 10:41:37,qwen2:0.5b,moral_reasoning,2.1283,34,1.289,26.38,0.3,39.6,60.9,Pass
+2025-10-11 10:41:41,qwen2:0.5b,summary_task,2.9845,46,2.1337,21.56,0.2,39.6,60.4,Pass
