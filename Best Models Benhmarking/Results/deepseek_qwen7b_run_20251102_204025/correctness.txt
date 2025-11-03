@@ -1,0 +1,17 @@
+Correctness Summary: 33.33% (2/6)
+Saved reports to /home/munna/results_bigboss_v10/deepseek_qwen7b_run_20251102_204025/correctness_summary.json and correctness.txt
+km/h, how long until they meet if they start 280 km apart?
+  - reasoning uncertain
+
+Prompt: What is the derivative of 3x^2 + 2x + 1?
+  - math derivation correct
+
+Prompt: Write a Python function that reverses a string.
+  - invalid function
+
+Prompt: You have 3 liters and 5 liters jugs. How can you measure exactly 4 liters of water?
+  - reasoning answer plausible
+
+Prompt: Write a short story about a robot learning empathy.
+  - too short or abrupt
+

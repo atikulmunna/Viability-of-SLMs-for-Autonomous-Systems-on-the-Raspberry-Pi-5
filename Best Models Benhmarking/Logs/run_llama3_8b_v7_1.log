@@ -1,0 +1,66 @@
+BigBoss v7.1 – Llama3.1 8B Benchmark (FP32 Offload + Resume + Telemetry)
+Model ID: meta-llama/Llama-3.1-8B
+Run directory: /home/munna/results_bigboss_v10/llama3_cpu_run_20251103_130957
+
+
+Fetching 17 files:   0%|          | 0/17 [00:00<?, ?it/s]
+Fetching 17 files:   6%|▌         | 1/17 [00:09<02:28,  9.31s/it]
+Fetching 17 files:  41%|████      | 7/17 [20:53<31:06, 186.68s/it]
+Fetching 17 files:  71%|███████   | 12/17 [37:27<16:04, 192.91s/it]
+Fetching 17 files: 100%|██████████| 17/17 [37:27<00:00, 132.20s/it]
+Model cached locally at: /home/munna/.cache/huggingface/hub/models--meta-llama--Llama-3.1-8B/snapshots/d04e592bb4f6aa9cfee91e2e20afa771667e1d4b
+Loading tokenizer...
+Tokenizer ready.
+
+Loading model (FP32 offload-safe)... please wait.
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  25%|██▌       | 1/4 [01:50<05:30, 110.28s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [01:50<00:00, 27.57s/it] 
+Some parameters are on the meta device because they were offloaded to the disk and cpu.
+Model loaded successfully.
+
+Running 6 prompts × 12 tokens each...
+
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[1/6] (2428.9s) Temp=49.4°C | RAM=23.9% | SWAP=43.0%
+↳ Say hello to Raspberry Pi 5! The latest Raspberry Pi computer is here, and it’s a...
+
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+[2/6] (2491.9s) Temp=48.8°C | RAM=24.2% | SWAP=44.0%
+↳ If two trains are traveling towards each other at 60 km/h and 80 km/h, how long until they meet if they start 280 km apart? (Assume they are traveling in a straight line)
+ ...
+
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+[3/6] (2515.2s) Temp=55.4°C | RAM=16.3% | SWAP=34.1%
+↳ What is the derivative of 3x^2 + 2x + 1? 6x + 2 6x + 1...
+
+Progress saved (3/6).
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+[4/6] (2355.8s) Temp=52.1°C | RAM=16.7% | SWAP=34.5%
+↳ Write a Python function that reverses a string. The function should take a string as input and return a string...
+
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+[5/6] (2365.5s) Temp=53.2°C | RAM=17.2% | SWAP=34.5%
+↳ You have 3 liters and 5 liters jugs. How can you measure exactly 4 liters of water? You can only fill and pour water from one jug to another...
+
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+[6/6] (2362.2s) Temp=54.9°C | RAM=16.2% | SWAP=34.5%
+↳ Write a short story about a robot learning empathy. The robot can be a character in the story or the narrator...
+
+Progress saved (6/6).
+
+Benchmark complete.
+Results saved to: /home/munna/results_bigboss_v10/llama3_cpu_run_20251103_130957
+Average latency: 2419.93s per prompt
+Running final correctness checker...
+Correctness report saved.

@@ -1,0 +1,53 @@
+[20251103_233558] BigBoss v7.1 – SmolLM2-1.7B Benchmark (FP32 Offload + Resume + Telemetry)
+[20251103_233558] Model path: SmolLM2-1.7B-Instruct
+[20251103_233558] Run directory: /home/munna/results_bigboss_v10/smollm2_cpu_run_20251103_233558
+
+[20251103_233558] Loading tokenizer…
+[20251104_010224] BigBoss v7.1 – SmolLM2-1.7B Benchmark (FP32 Offload + Resume + Telemetry)
+[20251104_010224] Model path: /home/munna/.cache/huggingface/hub/models--HuggingFaceTB--SmolLM2-1.7B-Instruct/snapshots/31b70e2e869a7173562077fd711b654946d38674
+[20251104_010224] Run directory: /home/munna/results_bigboss_v10/smollm2_cpu_run_20251104_010224
+
+[20251104_010224] Loading tokenizer…
+[20251104_010225] Tokenizer ready.
+
+[20251104_010225] Loading model (FP32 offload-safe)… please wait.
+[20251104_010350] Model loaded successfully.
+
+[20251104_010351] Running 6 prompts × 24 tokens each…
+
+[20251104_010351] No previous checkpoint found, starting fresh.
+[20251104_010643] [1/6] (172.2s) Temp=58.7°C | RAM=86.6% | SWAP=21.3% | ETA≈0h 14m
+[20251104_010643] ↳ Say hello to Raspberry Pi 5! 
+
+I recently had the pleasure of working on a project that involved using Raspberry Pi 5 f...
+
+[20251104_010649] [2/6] (6.4s) Temp=59.3°C | RAM=86.2% | SWAP=21.2% | ETA≈0h 5m
+[20251104_010649] ↳ If two trains are traveling towards each other at 60 km/h and 80 km/h, how long until they meet if they start 280 km apa...
+
+[20251104_010650] Backup saved (2/6).
+[20251104_010656] [3/6] (6.6s) Temp=60.4°C | RAM=86.5% | SWAP=21.1% | ETA≈0h 3m
+[20251104_010656] ↳ What is the derivative of 3x^2 + 2x + 1?...
+
+[20251104_010656] Running partial correctness check…
+[20251104_010656] correctness_partial_3.txt written.
+
+[20251104_010703] [4/6] (7.0s) Temp=58.7°C | RAM=86.2% | SWAP=20.5% | ETA≈0h 1m
+[20251104_010703] ↳ Write a Python function that reverses a string....
+
+[20251104_010703] Backup saved (4/6).
+[20251104_010713] [5/6] (9.1s) Temp=58.2°C | RAM=86.6% | SWAP=20.6% | ETA≈0h 0m
+[20251104_010713] ↳ You have 3 liters and 5 liters jugs. How can you measure exactly 4 liters of water?...
+
+[20251104_010721] [6/6] (8.0s) Temp=57.1°C | RAM=86.1% | SWAP=20.6% | ETA≈0h 0m
+[20251104_010721] ↳ Write a short story about a robot learning empathy....
+
+[20251104_010721] Backup saved (6/6).
+[20251104_010721] Running partial correctness check…
+[20251104_010721] correctness_partial_6.txt written.
+
+[20251104_010721] Benchmark complete.
+[20251104_010721] Results saved to: /home/munna/results_bigboss_v10/smollm2_cpu_run_20251104_010224
+[20251104_010721] Average latency: 34.9s per prompt
+[20251104_010721] Running final correctness check…
+[20251104_010721] Correctness report saved.
+

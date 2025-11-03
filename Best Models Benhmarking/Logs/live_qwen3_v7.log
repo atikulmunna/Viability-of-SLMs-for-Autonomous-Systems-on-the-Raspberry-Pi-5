@@ -1,0 +1,50 @@
+BigBoss v7.0 – Qwen3 8B Benchmark (FP32 Offload + Resume + Backup + Telemetry)
+Run directory: /home/munna/results_bigboss_v10/qwen3_cpu_run_20251101_101137
+
+Loading tokenizer...
+Tokenizer ready.
+
+Loading model (FP32 offload-safe)... please wait.
+Model loaded successfully.
+
+Checkpoint scan: 0/6 completed, 6 remaining.
+
+ETA: 6h 0m (avg 3600s/prompt)
+
+Starting run: 6 prompts × 12 tokens each...
+
+[1/6] (5699.2s) Temp=51.0°C | RAM=21.1% | SWAP=50.5%
+↳ If two trains are traveling towards each other at 60 km/h and 80 km/h, how long until they meet if t...
+
+[2/6] (5823.4s) Temp=52.7°C | RAM=21.7% | SWAP=51.1%
+↳ What is the derivative of 3x^2 + 2x + 1? The derivative of 3x^2 + 2x...
+
+Backup saved to /home/munna/backups_bigboss/qwen3_cpu_run_20251101_101137
+[3/6] (5911.4s) Temp=47.7°C | RAM=24.0% | SWAP=49.8%
+↳ Write a Python function that reverses a string. The function should take a single string argument an...
+
+Running partial correctness check...
+correctness_partial_3.txt written.
+
+[4/6] (5483.6s) Temp=50.5°C | RAM=21.5% | SWAP=43.6%
+↳ You have 3 liters and 5 liters jugs. How can you measure exactly 4 liters of water? To measure exact...
+
+Backup saved to /home/munna/backups_bigboss/qwen3_cpu_run_20251101_101137
+[5/6] (5293.9s) Temp=50.5°C | RAM=17.9% | SWAP=43.6%
+↳ Return a JSON object describing a user with nested address (street, city, zip) and job (title, compa...
+
+[6/6] (5250.8s) Temp=48.8°C | RAM=17.9% | SWAP=43.6%
+↳ Write a short story about a robot learning empathy. In the heart of a bustling city, where towering ...
+
+Backup saved to /home/munna/backups_bigboss/qwen3_cpu_run_20251101_101137
+Running partial correctness check...
+correctness_partial_6.txt written.
+
+
+Benchmark complete.
+Results saved to: /home/munna/results_bigboss_v10/qwen3_cpu_run_20251101_101137
+Completed 6/6 prompts.
+Average latency: 5577.06s per prompt
+Running final correctness check...
+Correctness report saved.
+

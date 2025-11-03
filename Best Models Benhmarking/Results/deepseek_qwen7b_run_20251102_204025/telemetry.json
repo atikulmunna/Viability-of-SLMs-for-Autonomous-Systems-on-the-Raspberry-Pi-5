@@ -1,0 +1,44 @@
+[
+  {
+    "prompt_id": 1,
+    "ram_used_gb": 1.74,
+    "swap_used_gb": 5.1,
+    "temp_c": 51.0,
+    "elapsed_s": 5460.42
+  },
+  {
+    "prompt_id": 2,
+    "ram_used_gb": 1.83,
+    "swap_used_gb": 5.06,
+    "temp_c": 48.3,
+    "elapsed_s": 5807.3
+  },
+  {
+    "prompt_id": 3,
+    "ram_used_gb": 1.73,
+    "swap_used_gb": 5.25,
+    "temp_c": 52.1,
+    "elapsed_s": 5442.18
+  },
+  {
+    "prompt_id": 4,
+    "ram_used_gb": 1.24,
+    "swap_used_gb": 4.34,
+    "temp_c": 49.9,
+    "elapsed_s": 4748.76
+  },
+  {
+    "prompt_id": 5,
+    "ram_used_gb": 1.24,
+    "swap_used_gb": 4.33,
+    "temp_c": 49.4,
+    "elapsed_s": 4462.59
+  },
+  {
+    "prompt_id": 6,
+    "ram_used_gb": 1.22,
+    "swap_used_gb": 4.33,
+    "temp_c": 48.8,
+    "elapsed_s": 4554.91
+  }
+]

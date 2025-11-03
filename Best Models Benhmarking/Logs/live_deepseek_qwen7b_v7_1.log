@@ -1,0 +1,61 @@
+[20251102_191729] BigBoss v7.1 – DeepSeek R1 (Qwen 7B) Benchmark (FP32 Offload + Resume + Telemetry)
+[20251102_191729] Model path: deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
+[20251102_191729] Run directory: /home/munna/results_bigboss_v10/deepseek_qwen7b_run_20251102_191729
+
+[20251102_191729] Loading tokenizer…
+[20251102_191729] Tokenizer ready.
+
+[20251102_191729] Loading model (FP32 offload-safe)… please wait.
+[20251102_191729] Model loaded successfully.
+
+[20251102_191729] Running 6 prompts × 12 tokens each…
+
+[20251102_204025] BigBoss v7.1 – DeepSeek R1 (Qwen 7B) Benchmark (FP32 Offload + Resume + Telemetry)
+[20251102_204025] Model path: deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
+[20251102_204025] Run directory: /home/munna/results_bigboss_v10/deepseek_qwen7b_run_20251102_204025
+
+[20251102_204025] Loading tokenizer…
+[20251102_204025] Tokenizer ready.
+
+[20251102_204025] Loading model (FP32 offload-safe)… please wait.
+[20251102_204025] Model loaded successfully.
+
+[20251102_204025] Running 6 prompts × 12 tokens each…
+
+[20251102_204025] [1/6] (5460.4s) Temp=51.0°C | RAM=22.1% | SWAP=31.9%
+[20251102_204025] ↳ Say hello to Raspberry Pi 5! I'm trying to figure out how to use the `math...
+
+[20251102_204025] [2/6] (5807.3s) Temp=48.3°C | RAM=23.3% | SWAP=31.6%
+[20251102_204025] ↳ If two trains are traveling towards each other at 60 km/h and 80 km/h, how long until they meet if t...
+
+[20251102_204025] [3/6] (5442.2s) Temp=52.1°C | RAM=22.0% | SWAP=32.8%
+[20251102_204025] ↳ What is the derivative of 3x^2 + 2x + 1? To find the derivative, we can use the power rule....
+
+[20251102_204025] Backup saved (3/6).
+[20251102_204025] Running partial correctness check…
+[20251102_204025] correctness_partial_3.txt written.
+
+[20251102_204025] [4/6] (4748.8s) Temp=49.9°C | RAM=15.8% | SWAP=27.1%
+[20251102_204025] ↳ Write a Python function that reverses a string. and returns the reversed string.
+
+Okay, I need to wr...
+
+[20251102_204025] [5/6] (4462.6s) Temp=49.4°C | RAM=15.7% | SWAP=27.1%
+[20251102_204025] ↳ You have 3 liters and 5 liters jugs. How can you measure exactly 4 liters of water?**
+Okay, so I hav...
+
+[20251102_204025] [6/6] (4554.9s) Temp=48.8°C | RAM=15.5% | SWAP=27.1%
+[20251102_204025] ↳ Write a short story about a robot learning empathy.150-300 words.
+
+Okay, so...
+
+[20251102_204025] Backup saved (6/6).
+[20251102_204025] Running partial correctness check…
+[20251102_204025] Correctness_partial_6.txt written.
+
+[20251102_204025] Benchmark complete.
+[20251102_204025] Results saved to: /home/munna/results_bigboss_v10/deepseek_qwen7b_run_20251102_204025
+[20251102_204025] Average latency: 5079.36s per prompt
+[20251102_204025] Running final correctness check…
+[20251102_204025] Correctness report saved.
+

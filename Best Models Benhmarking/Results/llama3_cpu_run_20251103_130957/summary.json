@@ -1,0 +1,7 @@
+{
+  "total_prompts": 6,
+  "tokens_per_prompt": 12,
+  "avg_latency_s": 2419.93,
+  "runtime_min": 242.01,
+  "timestamp": "20251103_130957"
+}

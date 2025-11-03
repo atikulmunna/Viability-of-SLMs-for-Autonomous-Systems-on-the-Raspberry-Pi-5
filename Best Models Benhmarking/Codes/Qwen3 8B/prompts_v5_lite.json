@@ -1,0 +1,28 @@
+{
+  "prompts": [
+    {
+      "type": "reasoning",
+      "text": "If two trains are traveling towards each other at 60 km/h and 80 km/h, how long until they meet if they start 280 km apart?"
+    },
+    {
+      "type": "math",
+      "text": "What is the derivative of 3x^2 + 2x + 1?"
+    },
+    {
+      "type": "coding",
+      "text": "Write a Python function that reverses a string."
+    },
+    {
+      "type": "logic_and_planning",
+      "text": "You have 3 liters and 5 liters jugs. How can you measure exactly 4 liters of water?"
+    },
+    {
+      "type": "json_generation",
+      "text": "Return a JSON object describing a user with nested address (street, city, zip) and job (title, company)."
+    },
+    {
+      "type": "nlp_creative",
+      "text": "Write a short story about a robot learning empathy."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "total_prompts": 6,
+  "completed_prompts": 6,
+  "tokens_per_prompt": 12,
+  "avg_latency_s": 5577.06,
+  "runtime_min": 557.73,
+  "timestamp": "20251101_101137"
+}

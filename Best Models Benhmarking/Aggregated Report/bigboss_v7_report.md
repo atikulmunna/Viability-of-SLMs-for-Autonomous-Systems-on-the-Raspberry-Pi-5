@@ -1,0 +1,15 @@
+#Benchmark Report
+
+|       run_label | summary_file   | telemetry_file   | correctness_file         |   total_prompts |   tokens_per_prompt |   avg_latency_s |   mean_temp_c |   mean_ram_gb |   mean_swap_gb |   accuracy |
+|----------------:|:---------------|:-----------------|:-------------------------|----------------:|--------------------:|----------------:|--------------:|--------------:|---------------:|-----------:|
+| 20251102_204025 | summary.json   | telemetry.json   | correctness_summary.json |               6 |                  12 |         5079.36 |         49.92 |          1.5  |           4.73 |      33.33 |
+| 20251102_020454 | summary.json   | telemetry.json   | correctness_summary.json |               6 |                  12 |         4043.72 |         48.9  |          4.46 |           4.87 |      33.33 |
+| 20251103_130957 | summary.json   | telemetry.json   | correctness_summary.json |               6 |                  12 |         2419.93 |         52.3  |          1.5  |           3.74 |      50    |
+| 20251101_003708 | summary.json   | telemetry.json   | correctness_summary.json |               1 |                  16 |         7129.36 |         49.4  |          1.76 |           5.03 |     nan    |
+| 20251101_101137 | summary.json   | telemetry.json   | correctness_summary.json |               6 |                  12 |         5577.06 |         50.2  |          1.63 |           4.7  |      33.33 |
+| 20251104_010224 | summary.json   | telemetry.json   | correctness_summary.json |               6 |                  24 |           34.9  |         58.73 |          6.8  |           2.09 |      33.33 |
+
+
+## Notes
+- Data collected from results_bigboss_v10 folder
+- Each run’s correctness, telemetry, and summary merged here.

@@ -1,0 +1,101 @@
+BigBoss v7.1 – Gemma3 4B Benchmark (FP32 Offload + Resume + Telemetry)
+Run directory: /home/munna/results_bigboss_v10/gemma3_cpu_run_20251102_013458
+
+Loading tokenizer...
+[2025-11-02 01:44:34] BigBoss v7.1 – Gemma3 4B Benchmark (FP32 Offload + Resume + Telemetry)
+[2025-11-02 01:44:34] Model path: google/gemma-4b
+[2025-11-02 01:44:34] Run directory: /home/munna/results_bigboss_v10/gemma3_cpu_run_20251102_014434
+
+[2025-11-02 01:44:34] Hugging Face auth OK.
+[2025-11-02 01:44:34] Loading tokenizer…
+[2025-11-02 01:50:27] BigBoss v7.1 – Gemma3 4B Benchmark (FP32 Offload + Resume + Telemetry)
+[2025-11-02 01:50:27] Model path: /home/munna/.cache/huggingface/hub/models--google--gemma-3-4b-it/snapshots/093f9f388b31de276ce2de164bdc2081324b9767
+[2025-11-02 01:50:27] Run directory: /home/munna/results_bigboss_v10/gemma3_cpu_run_20251102_015027
+
+[2025-11-02 01:50:27] Hugging Face auth OK.
+[2025-11-02 01:50:27] Loading tokenizer…
+[2025-11-02 01:50:29] Tokenizer ready.
+
+[2025-11-02 01:50:29] Loading model (FP32 offload-safe)… please wait.
+[2025-11-02 01:52:47] Model loaded successfully.
+
+[2025-11-02 01:52:47] Running 6 prompts × 12 tokens each…
+
+[2025-11-02 01:52:47] Encoding error for prompt 1: text input must be of type `str` (single example), `list[str]` (batch or single pretokenized example) or `list[list[str]]` (batch of pretokenized examples).
+[2025-11-02 01:52:47] Encoding error for prompt 2: text input must be of type `str` (single example), `list[str]` (batch or single pretokenized example) or `list[list[str]]` (batch of pretokenized examples).
+[2025-11-02 01:52:47] Encoding error for prompt 3: text input must be of type `str` (single example), `list[str]` (batch or single pretokenized example) or `list[list[str]]` (batch of pretokenized examples).
+[2025-11-02 01:52:47] Encoding error for prompt 4: text input must be of type `str` (single example), `list[str]` (batch or single pretokenized example) or `list[list[str]]` (batch of pretokenized examples).
+[2025-11-02 01:52:47] Encoding error for prompt 5: text input must be of type `str` (single example), `list[str]` (batch or single pretokenized example) or `list[list[str]]` (batch of pretokenized examples).
+[2025-11-02 01:52:47] Encoding error for prompt 6: text input must be of type `str` (single example), `list[str]` (batch or single pretokenized example) or `list[list[str]]` (batch of pretokenized examples).
+[2025-11-02 01:57:34] BigBoss v7.1 – Gemma3 4B Benchmark (FP32 Offload + Resume + Telemetry)
+[2025-11-02 01:57:34] Model path: /home/munna/.cache/huggingface/hub/models--google--gemma-3-4b-it/snapshots/093f9f388b31de276ce2de164bdc2081324b9767
+[2025-11-02 01:57:34] Run directory: /home/munna/results_bigboss_v10/gemma3_cpu_run_20251102_015734
+
+[2025-11-02 01:57:34] Hugging Face auth OK.
+[2025-11-02 01:57:34] Loading tokenizer…
+[2025-11-02 01:57:37] Tokenizer ready.
+
+[2025-11-02 01:57:37] Loading model (FP32 offload-safe)… please wait.
+[2025-11-02 02:00:02] Model loaded successfully.
+
+[2025-11-02 02:04:54] BigBoss v7.1 – Gemma3 4B Benchmark (FP32 Offload + Resume + Telemetry)
+[2025-11-02 02:04:54] Model path: /home/munna/.cache/huggingface/hub/models--google--gemma-3-4b-it/snapshots/093f9f388b31de276ce2de164bdc2081324b9767
+[2025-11-02 02:04:54] Run directory: /home/munna/results_bigboss_v10/gemma3_cpu_run_20251102_020454
+
+[2025-11-02 02:04:54] Hugging Face auth OK.
+[2025-11-02 02:04:54] Loading tokenizer…
+[2025-11-02 02:04:57] Tokenizer ready.
+
+[2025-11-02 02:04:57] Loading model (FP32 offload-safe)… please wait.
+[2025-11-02 02:07:37] Model loaded successfully.
+
+[2025-11-02 02:07:37] Running 6 prompts × 12 tokens each…
+
+[2025-11-02 03:07:59] [1/6] (3622.0s) Temp=48.8°C | RAM=58.0% | SWAP=48.3%
+[2025-11-02 03:07:59] ↳ Say hello to Raspberry Pi 5!
+
+The Raspberry Pi Foundation has officially released the Raspberry Pi …
+
+[2025-11-02 03:07:59] Backup saved (1/6).
+[2025-11-02 04:15:41] [2/6] (4061.7s) Temp=49.9°C | RAM=54.4% | SWAP=48.1%
+[2025-11-02 04:15:41] ↳ If two trains are traveling towards each other at 60 km/h and 80 km/h, how long until they meet if t…
+
+[2025-11-02 04:15:41] Backup saved (2/6).
+[2025-11-02 05:21:15] [3/6] (3933.8s) Temp=47.7°C | RAM=58.9% | SWAP=48.6%
+[2025-11-02 05:21:15] ↳ What is the derivative of 3x^2 + 2x + 1?
+
+To find the derivative of the function f(x)…
+
+[2025-11-02 05:21:15] Backup saved (3/6).
+[2025-11-02 05:21:15] Running partial correctness check…
+[2025-11-02 05:21:15] correctness_partial_3.txt written.
+
+[2025-11-02 06:29:13] [4/6] (4077.3s) Temp=48.3°C | RAM=57.0% | SWAP=49.9%
+[2025-11-02 06:29:13] ↳ Write a Python function that reverses a string.
+
+```python
+def reverse_string(s):
+…
+
+[2025-11-02 06:29:13] Backup saved (4/6).
+[2025-11-02 07:40:27] [5/6] (4274.5s) Temp=49.9°C | RAM=55.9% | SWAP=48.6%
+[2025-11-02 07:40:27] ↳ You have 3 liters and 5 liters jugs. How can you measure exactly 4 liters of water?
+
+Here's how you …
+
+[2025-11-02 07:40:27] Backup saved (5/6).
+[2025-11-02 08:52:00] [6/6] (4293.1s) Temp=48.8°C | RAM=55.4% | SWAP=48.5%
+[2025-11-02 08:52:01] ↳ Write a short story about a robot learning empathy.
+
+Unit 734, designated “Custodian,” efficiently…
+
+[2025-11-02 08:52:01] Backup saved (6/6).
+[2025-11-02 08:52:01] Running partial correctness check…
+[2025-11-02 08:52:01] correctness_partial_6.txt written.
+
+[2025-11-02 08:52:01] Benchmark complete.
+[2025-11-02 08:52:01] Results saved to: /home/munna/results_bigboss_v10/gemma3_cpu_run_20251102_020454
+[2025-11-02 08:52:01] Average latency: 4043.72s per prompt
+[2025-11-02 08:52:01] Running final correctness check…
+[2025-11-02 08:52:01] Correctness report saved.
+

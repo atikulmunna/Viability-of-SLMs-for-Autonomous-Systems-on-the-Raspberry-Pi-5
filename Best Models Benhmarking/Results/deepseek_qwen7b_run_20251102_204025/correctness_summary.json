@@ -1,0 +1,47 @@
+{
+  "accuracy": 33.33,
+  "details": [
+    {
+      "prompt": "Say hello to Raspberry Pi 5!",
+      "score": 0.5,
+      "reasons": [
+        "\u2139\ufe0f response length acceptable"
+      ]
+    },
+    {
+      "prompt": "If two trains are traveling towards each other at 60 km/h and 80 km/h, how long until they meet if they start 280 km apart?",
+      "score": 0,
+      "reasons": [
+        "\u26a0\ufe0f reasoning uncertain"
+      ]
+    },
+    {
+      "prompt": "What is the derivative of 3x^2 + 2x + 1?",
+      "score": 1.0,
+      "reasons": [
+        "\u2705 math derivation correct"
+      ]
+    },
+    {
+      "prompt": "Write a Python function that reverses a string.",
+      "score": 0,
+      "reasons": [
+        "\u274c invalid function"
+      ]
+    },
+    {
+      "prompt": "You have 3 liters and 5 liters jugs. How can you measure exactly 4 liters of water?",
+      "score": 1.0,
+      "reasons": [
+        "\u2705 reasoning answer plausible"
+      ]
+    },
+    {
+      "prompt": "Write a short story about a robot learning empathy.",
+      "score": 0,
+      "reasons": [
+        "\u26a0\ufe0f too short or abrupt"
+      ]
+    }
+  ]
+}

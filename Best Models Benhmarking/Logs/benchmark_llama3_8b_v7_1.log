@@ -1,0 +1,40 @@
+2025-11-03T13:09:57.834054 BigBoss v7.1 – Llama3.1 8B Benchmark (FP32 Offload + Resume + Telemetry)
+2025-11-03T13:09:57.834138 Model ID: meta-llama/Llama-3.1-8B
+2025-11-03T13:09:57.834177 Run directory: /home/munna/results_bigboss_v10/llama3_cpu_run_20251103_130957
+
+2025-11-03T13:47:25.506683 Model cached locally at: /home/munna/.cache/huggingface/hub/models--meta-llama--Llama-3.1-8B/snapshots/d04e592bb4f6aa9cfee91e2e20afa771667e1d4b
+2025-11-03T13:47:25.623306 Loading tokenizer...
+2025-11-03T13:47:28.924404 Tokenizer ready.
+
+2025-11-03T13:47:28.924546 Loading model (FP32 offload-safe)... please wait.
+2025-11-03T13:49:20.645216 Model loaded successfully.
+
+2025-11-03T13:49:20.646661 Running 6 prompts × 12 tokens each...
+
+2025-11-03T14:29:49.643475 [1/6] (2428.9s) Temp=49.4°C | RAM=23.9% | SWAP=43.0%
+2025-11-03T14:29:49.648038 ↳ Say hello to Raspberry Pi 5! The latest Raspberry Pi computer is here, and it’s a...
+
+2025-11-03T15:11:21.754229 [2/6] (2491.9s) Temp=48.8°C | RAM=24.2% | SWAP=44.0%
+2025-11-03T15:11:21.766651 ↳ If two trains are traveling towards each other at 60 km/h and 80 km/h, how long until they meet if they start 280 km apart? (Assume they are traveling in a straight line)
+ ...
+
+2025-11-03T15:53:17.102030 [3/6] (2515.2s) Temp=55.4°C | RAM=16.3% | SWAP=34.1%
+2025-11-03T15:53:17.105229 ↳ What is the derivative of 3x^2 + 2x + 1? 6x + 2 6x + 1...
+
+2025-11-03T15:53:17.146568 Progress saved (3/6).
+2025-11-03T16:32:33.098999 [4/6] (2355.8s) Temp=52.1°C | RAM=16.7% | SWAP=34.5%
+2025-11-03T16:32:33.101559 ↳ Write a Python function that reverses a string. The function should take a string as input and return a string...
+
+2025-11-03T17:11:58.716663 [5/6] (2365.5s) Temp=53.2°C | RAM=17.2% | SWAP=34.5%
+2025-11-03T17:11:58.720157 ↳ You have 3 liters and 5 liters jugs. How can you measure exactly 4 liters of water? You can only fill and pour water from one jug to another...
+
+2025-11-03T17:51:20.985460 [6/6] (2362.2s) Temp=54.9°C | RAM=16.2% | SWAP=34.5%
+2025-11-03T17:51:20.990037 ↳ Write a short story about a robot learning empathy. The robot can be a character in the story or the narrator...
+
+2025-11-03T17:51:21.042165 Progress saved (6/6).
+2025-11-03T17:51:21.052351 
+Benchmark complete.
+2025-11-03T17:51:21.052439 Results saved to: /home/munna/results_bigboss_v10/llama3_cpu_run_20251103_130957
+2025-11-03T17:51:21.052478 Average latency: 2419.93s per prompt
+2025-11-03T17:51:21.056167 Running final correctness checker...
+2025-11-03T17:51:21.333169 Correctness report saved.

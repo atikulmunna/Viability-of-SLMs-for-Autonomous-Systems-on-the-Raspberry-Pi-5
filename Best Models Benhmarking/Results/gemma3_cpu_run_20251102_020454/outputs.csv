@@ -1,0 +1,23 @@
+id,prompt,output,elapsed_s
+1,Say hello to Raspberry Pi 5!,"Say hello to Raspberry Pi 5!
+
+The Raspberry Pi Foundation has officially released the Raspberry Pi ",3621.96
+2,"If two trains are traveling towards each other at 60 km/h and 80 km/h, how long until they meet if they start 280 km apart?","If two trains are traveling towards each other at 60 km/h and 80 km/h, how long until they meet if they start 280 km apart?
+
+Let $v_1$ be the speed of the",4061.69
+3,What is the derivative of 3x^2 + 2x + 1?,"What is the derivative of 3x^2 + 2x + 1?
+
+To find the derivative of the function f(x)",3933.77
+4,Write a Python function that reverses a string.,"Write a Python function that reverses a string.
+
+```python
+def reverse_string(s):
+",4077.28
+5,You have 3 liters and 5 liters jugs. How can you measure exactly 4 liters of water?,"You have 3 liters and 5 liters jugs. How can you measure exactly 4 liters of water?
+
+Here's how you can do it:
+
+1",4274.48
+6,Write a short story about a robot learning empathy.,"Write a short story about a robot learning empathy.
+
+Unit 734, designated “Custodian,” efficiently",4293.11

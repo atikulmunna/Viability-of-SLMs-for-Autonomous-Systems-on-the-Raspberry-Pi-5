@@ -1,0 +1,9 @@
+id,prompt,output,elapsed_s
+1,"If two trains are traveling towards each other at 60 km/h and 80 km/h, how long until they meet if they start 280 km apart?","If two trains are traveling towards each other at 60 km/h and 80 km/h, how long until they meet if they start 280 km apart? To determine how long it will take for the two trains to",5699.22
+2,What is the derivative of 3x^2 + 2x + 1?,What is the derivative of 3x^2 + 2x + 1? The derivative of 3x^2 + 2x,5823.39
+3,Write a Python function that reverses a string.,Write a Python function that reverses a string. The function should take a single string argument and return the reversed,5911.44
+4,You have 3 liters and 5 liters jugs. How can you measure exactly 4 liters of water?,You have 3 liters and 5 liters jugs. How can you measure exactly 4 liters of water? To measure exactly 4 liters of water using a 3,5483.64
+5,"Return a JSON object describing a user with nested address (street, city, zip) and job (title, company).","Return a JSON object describing a user with nested address (street, city, zip) and job (title, company). {
+  ""name"": ""John Doe"",
+  ""age",5293.85
+6,Write a short story about a robot learning empathy.,"Write a short story about a robot learning empathy. In the heart of a bustling city, where towering skyscrap",5250.81
